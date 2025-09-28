@@ -17,30 +17,7 @@
             
                         </div>
 {% endfor %}
-            <div data-delay="4000" data-animation="slide" class="slider-5 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-              <div class="w-slider-mask">
-                {% for block in section.blocks %}
-    {% if block.type == "slides" %}
-                    <div li-block="Slides" class="announcement-slide w-slide">
-                                    
-                  
-                                    <a href="{{ block.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if block.settings.image_slide_icon %} {{ block.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div class="paragraph-regular-5">{{ block.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ block.settings.text_badge_text }}</div> </a>
-                                    
-                
-                            </div>
-            {% endif %}
-{% endfor %}
-              </div>
-              {% for block in section.blocks %}
-    {% if block.type == "announcement-slide" %}
-                    <div li-block="Announcement Slide" class="left-arrow-4 w-slider-arrow-left">
-                                    <img loading="lazy" src="{{ 'arrow-left-s-line.svg' | asset_url }}" alt="" class="arrow-small">
-                            </div>
-            {% endif %}
-{% endfor %}
-              <div class="right-arrow-5 w-slider-arrow-right"><img loading="lazy" height="Auto" alt="" src="{{ 'arrow-right-s-line-1.svg' | asset_url }}" class="arrow-small"></div>
-              <div class="hide-2 w-slider-nav"></div>
-            </div>
+            <a href="{{ section.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if section.settings.image_slide_icon %} {{ section.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div class="paragraph-regular-5">{{ section.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ section.settings.text_badge_text }}</div> </a>
             <div class="div-block-585">
               <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46c4" class="w-layout-grid social-grid xs">
                 <a href="https://www.facebook.com/ozempure" target="_blank" class="social-icon-square-2 xs-8 w-inline-block">
@@ -69,53 +46,35 @@
         </div> {% schema %} {
     "tag": "div",
     "name": "Announcement Bar",
-    "blocks": [
+    "settings": [
         {
-            "name": "Slides",
-            "type": "slides",
-            "settings": [
-                {
-                    "id": "url_slide_link",
-                    "type": "url",
-                    "label": "Slide Link"
-                },
-                {
-                    "id": "image_slide_icon",
-                    "type": "image_picker",
-                    "label": "Slide Icon"
-                },
-                {
-                    "id": "text_slide_text",
-                    "type": "text",
-                    "label": "Slide Text",
-                    "default": "Free UK shipping when you spent \u00a350"
-                },
-                {
-                    "id": "text_badge_text",
-                    "type": "text",
-                    "label": "Badge Text",
-                    "default": "Try Now"
-                }
-            ]
+            "id": "url_slide_link",
+            "type": "url",
+            "label": "Slide Link"
         },
         {
-            "name": "Announcement Slide",
-            "type": "announcement-slide",
-            "settings": null
+            "id": "image_slide_icon",
+            "type": "image_picker",
+            "label": "Slide Icon"
+        },
+        {
+            "id": "text_slide_text",
+            "type": "text",
+            "label": "Slide Text",
+            "default": "Free UK shipping when you spent \u00a350"
+        },
+        {
+            "id": "text_badge_text",
+            "type": "text",
+            "label": "Badge Text",
+            "default": "Try Now"
         }
     ],
     "presets": [
         {
             "name": "Announcement Bar",
             "category": "Liquify",
-            "blocks": [
-                {
-                    "type": "slides"
-                },
-                {
-                    "type": "announcement-slide"
-                }
-            ]
+            "blocks": []
         }
     ]
 } {% endschema %}
