@@ -1,0 +1,121 @@
+<div class="banner-bar">
+          <div class="uui-navbar01_container">
+            {% for link in linklists['announcement-menu'].links %}    <div li-for="link in linklists['announcement-menu'].links" class="nav05_top_left">
+                                    
+              
+                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="69c5c1e4-82fe-37cb-7b4c-5a5276e40211" class="uui-navbar01_link w-inline-block">
+                <div class="clip-5 tiny-2">
+                  <div class="hover-text-6 tiny-3">
+                    <div li-object="link.title">{{ link.title }}</div>
+                  </div>
+                  <div class="hover-text-6 tiny-3 bottom tiny-4">
+                    <div li-object="link.title">{{ link.title }}</div>
+                  </div>
+                </div>
+              </a>
+                            
+            
+                        </div>
+{% endfor %}
+            <div data-delay="4000" data-animation="slide" class="slider-5 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="w-slider-mask">
+                {% for block in section.blocks %}
+    {% if block.type == "slides" %}
+                    <div li-block="Slides" class="announcement-slide w-slide">
+                                    
+                  
+                                    <a href="{{ block.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if block.settings.image_slide_icon %} {{ block.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div class="paragraph-regular-5">{{ block.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ block.settings.text_badge_text }}</div> </a>
+                                    
+                
+                            </div>
+            {% endif %}
+{% endfor %}
+              </div>
+              {% for block in section.blocks %}
+    {% if block.type == "announcement-slide" %}
+                    <div li-block="Announcement Slide" class="left-arrow-4 w-slider-arrow-left">
+                                    <img loading="lazy" src="{{ 'arrow-left-s-line.svg' | asset_url }}" alt="" class="arrow-small">
+                            </div>
+            {% endif %}
+{% endfor %}
+              <div class="right-arrow-5 w-slider-arrow-right"><img loading="lazy" height="Auto" alt="" src="{{ 'arrow-right-s-line-1.svg' | asset_url }}" class="arrow-small"></div>
+              <div class="hide-2 w-slider-nav"></div>
+            </div>
+            <div class="div-block-585">
+              <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46c4" class="w-layout-grid social-grid xs">
+                <a href="https://www.facebook.com/ozempure" target="_blank" class="social-icon-square-2 xs-8 w-inline-block">
+                  <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46c6" class="social-logo xs-9 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+                <a href="https://instagram.com/ozempure" target="_blank" class="social-icon-square-2 xs-8 w-inline-block">
+                  <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46c8" class="social-logo xs-9 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3.57605H8C5.23858 3.57605 3 5.81463 3 8.57605V16.576C3 19.3375 5.23858 21.576 8 21.576H16C18.7614 21.576 21 19.3375 21 16.576V8.57605C21 5.81463 18.7614 3.57605 16 3.57605ZM19.25 16.576C19.2445 18.3686 17.7926 19.8205 16 19.826H8C6.20735 19.8205 4.75549 18.3686 4.75 16.576V8.57605C4.75549 6.7834 6.20735 5.33154 8 5.32605H16C17.7926 5.33154 19.2445 6.7834 19.25 8.57605V16.576ZM16.75 8.82605C17.3023 8.82605 17.75 8.37833 17.75 7.82605C17.75 7.27377 17.3023 6.82605 16.75 6.82605C16.1977 6.82605 15.75 7.27377 15.75 7.82605C15.75 8.37833 16.1977 8.82605 16.75 8.82605ZM12 8.07605C9.51472 8.07605 7.5 10.0908 7.5 12.576C7.5 15.0613 9.51472 17.076 12 17.076C14.4853 17.076 16.5 15.0613 16.5 12.576C16.5027 11.3817 16.0294 10.2356 15.1849 9.39113C14.3404 8.54664 13.1943 8.07339 12 8.07605ZM9.25 12.576C9.25 14.0948 10.4812 15.326 12 15.326C13.5188 15.326 14.75 14.0948 14.75 12.576C14.75 11.0573 13.5188 9.82605 12 9.82605C10.4812 9.82605 9.25 11.0573 9.25 12.576Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+                <a href="https://youtube.com/@ozempure" target="_blank" class="social-icon-square-2 xs-8 w-inline-block">
+                  <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46cc" class="social-logo xs-9 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                      <path d="M21.5928 7.53638C21.4789 7.11378 21.2563 6.72839 20.9472 6.41855C20.6381 6.10871 20.2532 5.88524 19.8308 5.77038C18.2648 5.34038 11.9998 5.33338 11.9998 5.33338C11.9998 5.33338 5.73584 5.32638 4.16884 5.73738C3.74677 5.85753 3.36266 6.08416 3.05341 6.39552C2.74415 6.70687 2.52013 7.0925 2.40284 7.51538C1.98984 9.08138 1.98584 12.3294 1.98584 12.3294C1.98584 12.3294 1.98184 15.5934 2.39184 17.1434C2.62184 18.0004 3.29684 18.6774 4.15484 18.9084C5.73684 19.3384 11.9848 19.3454 11.9848 19.3454C11.9848 19.3454 18.2498 19.3524 19.8158 18.9424C20.2383 18.8277 20.6236 18.6048 20.9335 18.2956C21.2434 17.9864 21.4672 17.6016 21.5828 17.1794C21.9968 15.6144 21.9998 12.3674 21.9998 12.3674C21.9998 12.3674 22.0198 9.10238 21.5928 7.53638ZM9.99584 15.3384L10.0008 9.33838L15.2078 12.3434L9.99584 15.3384Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+                <a href="https://tiktok.com/ozempure" target="_blank" class="social-icon-square-2 xs-8 w-inline-block">
+                  <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46d2" class="social-logo xs-9 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="20" height="20"><!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                      <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Announcement Bar",
+    "blocks": [
+        {
+            "name": "Slides",
+            "type": "slides",
+            "settings": [
+                {
+                    "id": "url_slide_link",
+                    "type": "url",
+                    "label": "Slide Link"
+                },
+                {
+                    "id": "image_slide_icon",
+                    "type": "image_picker",
+                    "label": "Slide Icon"
+                },
+                {
+                    "id": "text_slide_text",
+                    "type": "text",
+                    "label": "Slide Text",
+                    "default": "Free UK shipping when you spent \u00a350"
+                },
+                {
+                    "id": "text_badge_text",
+                    "type": "text",
+                    "label": "Badge Text",
+                    "default": "Try Now"
+                }
+            ]
+        },
+        {
+            "name": "Announcement Slide",
+            "type": "announcement-slide",
+            "settings": null
+        }
+    ],
+    "presets": [
+        {
+            "name": "Announcement Bar",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "slides"
+                },
+                {
+                    "type": "announcement-slide"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
