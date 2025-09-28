@@ -1,0 +1,88 @@
+<div class="header26_component is-text">
+          <div class="margin-bottom is-relative">
+            <div class="text-align-center">
+              <div data-w-id="1df109a5-2673-b007-2eed-18b3e2d96beb" class="max-width-large">
+                <div>
+                  <h2 class="heading-style-h2-4 is-subhead">
+{{ section.settings.text_top_text }}
+</h2>
+                </div>
+                <div class="heading-style-h1-3 is-largetext is-mental">
+{{ section.settings.text_solid_heading }}
+</div>
+                <div class="heading-style-h1-3 is-largetext is-mental outline-text">
+{{ section.settings.text_outline_text }}
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="header26_image-wrapper">{% if section.settings.image_mushroom %}
+{{ section.settings.image_mushroom | image_url: width: 1000 | image_tag: data-w-id: '1df109a5-2673-b007-2eed-18b3e2d96bf5', loading: 'eager', class: 'header26_image' }}
+{% else %}
+<img data-w-id="1df109a5-2673-b007-2eed-18b3e2d96bf5" alt="" src="https://uploads-ssl.webflow.com/66762a278b3e636bb85f4c56/66762a278b3e636bb85f4c62_Header%20asset.png" loading="eager" class="header26_image">
+{% endif %}</div>
+          <div class="header26-background_wrap"><img sizes="(max-width: 1439px) 100vw, 1440px" srcset="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 500w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 800w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1080w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1440w" alt="" src="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }}" loading="lazy" class="header26-background-image">
+            <div class="header26-background-overlay"></div>
+          </div>
+        </div>
+        <div data-w-id="1df109a5-2673-b007-2eed-18b3e2d96bf9" class="dotted-line_wrap is-line">
+          <div class="dottled-line-image_wrap"><img loading="lazy" src="{{ 'Dotted-line_1Dotted-line.webp' | asset_url }}" alt="" class="dotted-line-image"></div>
+        </div>
+        <div class="section_layout143">
+          <div class="padding-global-5">
+            <div class="container-large-5">
+              <div class="padding-section-small no-top-padding">
+                <div class="layout143-video-wrap is-video-wrap">
+                  <div class="layout143_component is-video_wrap">
+                    <div class="layout143_lightbox">
+                      <div class="code-embed w-embed w-iframe">{{ section.settings.html_video_embed }} </div>
+                    </div>
+                  </div>
+                  <div class="bg-gradient_wrap gold-gradient"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Video Section",
+    "class": "section_header26",
+    "settings": [
+        {
+            "id": "text_top_text",
+            "type": "text",
+            "label": "Top Text",
+            "default": "Experience \u00a0a new level of"
+        },
+        {
+            "id": "text_solid_heading",
+            "type": "text",
+            "label": "Solid Heading",
+            "default": "Mental"
+        },
+        {
+            "id": "text_outline_text",
+            "type": "text",
+            "label": "Outline Text",
+            "default": "Clarity"
+        },
+        {
+            "id": "image_mushroom",
+            "type": "image_picker",
+            "label": "Mushroom"
+        },
+        {
+            "id": "html_video_embed",
+            "type": "html",
+            "label": "Video Embed",
+            "default": "<iframe width=\"100%\" height=\"450\" src=\"https:\/\/www.youtube.com\/embed\/_OqA7q6Zvyo?si=EnJFdnYhpDxv52Nr\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"\/>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Video Section",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

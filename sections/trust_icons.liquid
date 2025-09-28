@@ -1,0 +1,57 @@
+<div class="container">
+          <div class="feature-contant-wrap">
+            <div class="feature-flex-wrap">
+              {% for block in section.blocks %}
+    {% if block.type == "trust-icons" %}
+                    <div li-block="Trust Icons" class="small-usps">
+                                    
+                
+                                    <div class="feature-image-wrap">{% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 32 | image_tag: loading: 'lazy', class: 'small-usp-image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'small-usp-image' }} 
+{% endif %}
+                  <div> {{ block.settings.richtext_richtext }} </div>
+                </div>
+                                    
+              
+                            </div>
+            {% endif %}
+{% endfor %}
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Trust Icons",
+    "class": "section usps",
+    "blocks": [
+        {
+            "name": "Trust Icons",
+            "type": "trust-icons",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p><strong>4.9\/5<\/strong> Star Reviews<\/p>"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Trust Icons",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "trust-icons"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
