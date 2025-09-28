@@ -1,0 +1,67 @@
+{
+    "sections": {
+        "hero_v4": {
+            "type": "hero_v4"
+        },
+        "trust_icons": {
+            "type": "trust_icons",
+            "blocks": {
+                "trust-icons": {
+                    "name": "Trust Icons",
+                    "type": "trust-icons"
+                }
+            },
+            "block_order": [
+                "trust-icons"
+            ]
+        },
+        "usp_section": {
+            "type": "usp_section",
+            "blocks": {
+                "usp-block": {
+                    "name": "USP Block",
+                    "type": "usp-block"
+                }
+            },
+            "block_order": [
+                "usp-block"
+            ]
+        },
+        "product_selection": {
+            "type": "product_selection"
+        },
+        "video_section": {
+            "type": "video_section"
+        },
+        "image_with_text_icon": {
+            "type": "image_with_text_icon",
+            "blocks": {
+                "icon-with-text": {
+                    "name": "Icon with Text",
+                    "type": "icon-with-text"
+                }
+            },
+            "block_order": [
+                "icon-with-text"
+            ]
+        },
+        "featured_product_2": {
+            "type": "featured_product_2"
+        },
+        "call_to_action": {
+            "type": "call_to_action"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper.minus",
+    "order": [
+        "hero_v4",
+        "trust_icons",
+        "usp_section",
+        "product_selection",
+        "video_section",
+        "image_with_text_icon",
+        "featured_product_2",
+        "call_to_action"
+    ]
+}
