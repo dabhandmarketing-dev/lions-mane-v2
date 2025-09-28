@@ -1,67 +1,127 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "hero_v4": {
-            "type": "hero_v4"
-        },
-        "trust_icons": {
-            "type": "trust_icons",
-            "blocks": {
-                "trust-icons": {
-                    "name": "Trust Icons",
-                    "type": "trust-icons"
-                }
-            },
-            "block_order": [
-                "trust-icons"
-            ]
-        },
-        "usp_section": {
-            "type": "usp_section",
-            "blocks": {
-                "usp-block": {
-                    "name": "USP Block",
-                    "type": "usp-block"
-                }
-            },
-            "block_order": [
-                "usp-block"
-            ]
-        },
-        "product_selection": {
-            "type": "product_selection"
-        },
-        "video_section": {
-            "type": "video_section"
-        },
-        "image_with_text_icon": {
-            "type": "image_with_text_icon",
-            "blocks": {
-                "icon-with-text": {
-                    "name": "Icon with Text",
-                    "type": "icon-with-text"
-                }
-            },
-            "block_order": [
-                "icon-with-text"
-            ]
-        },
-        "featured_product_2": {
-            "type": "featured_product_2"
-        },
-        "call_to_action": {
-            "type": "call_to_action"
-        }
+  "sections": {
+    "hero_v4": {
+      "type": "hero_v4",
+      "settings": {
+        "text_bold_heading": "Think",
+        "text_outline_heading": "Better.",
+        "url_button_link": "",
+        "text_button_text": "Try Lions Mane",
+        "image_pouches": "shopify://shop_images/Bottles.webp"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper.minus",
-    "order": [
-        "hero_v4",
-        "trust_icons",
-        "usp_section",
-        "product_selection",
-        "video_section",
-        "image_with_text_icon",
-        "featured_product_2",
-        "call_to_action"
-    ]
+    "trust_icons": {
+      "type": "trust_icons",
+      "blocks": {
+        "trust-icons": {
+          "type": "trust-icons",
+          "name": "Trust Icons",
+          "settings": {
+            "richtext_richtext": "<p><strong>4.9/5</strong> Star Reviews</p>"
+          }
+        }
+      },
+      "block_order": [
+        "trust-icons"
+      ],
+      "settings": {}
+    },
+    "usp_section": {
+      "type": "usp_section",
+      "blocks": {
+        "usp-block": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "",
+            "text_heading": "Think Better",
+            "text_text": "Lion’s Mane boosts cognitive function by promoting nerve growth factor (NGF) production, enhancing memory, focus, and mental clarity.",
+            "text_button_text": "Find Out More"
+          }
+        }
+      },
+      "block_order": [
+        "usp-block"
+      ],
+      "settings": {
+        "text_top_text": "Think Better. Feel Better. Do Better.",
+        "text_bottom_text": "Do Better. Feel Better. Think Better."
+      }
+    },
+    "product_selection": {
+      "type": "product_selection",
+      "settings": {
+        "text_subheading": "Think Better. Do Better. Feel Better",
+        "text_large_heading": "<span class=\"outline-text\">TRY</span> Lions Mane"
+      }
+    },
+    "video_section": {
+      "type": "video_section",
+      "settings": {
+        "text_top_text": "Experience  a new level of",
+        "text_solid_heading": "Mental",
+        "text_outline_text": "Clarity",
+        "html_video_embed": "<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/_OqA7q6Zvyo?si=EnJFdnYhpDxv52Nr\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>"
+      }
+    },
+    "image_with_text_icon": {
+      "type": "image_with_text_icon",
+      "blocks": {
+        "icon-with-text": {
+          "type": "icon-with-text",
+          "name": "Icon with Text",
+          "settings": {
+            "text_icon_heading": "Support Brain Health",
+            "richtext_icon_with_text_paragraph": "<p>Studies show Lion’s Mane improves cognitive function and memory, helping you stay focused and clear-headed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon-with-text"
+      ],
+      "settings": {
+        "text_heading": "Brain Fog. Be Gone",
+        "richtext_paragraph": "<p>Lion’s Mane reduces brain fog, promoting mental clarity and sharpness. It supports brain health by enhancing nerve growth factor (NGF) production, crucial for neuron maintenance and regeneration. </p>",
+        "url_button_link": "",
+        "text_button_text": "Try Lions Mane"
+      }
+    },
+    "featured_product_2": {
+      "type": "featured_product_2",
+      "settings": {
+        "product_featured_product": "",
+        "text_headline": "Description"
+      }
+    },
+    "call_to_action": {
+      "type": "call_to_action",
+      "settings": {
+        "text_heading": "Try Lions Mane",
+        "richtext_paragraph": "<p> Enhance your mental clarity, boost your mood, and feel your best every day. <br/><strong>Think sharper, feel calmer, and achieve more</strong></p>",
+        "url_button_link": "",
+        "text_button_text": "Try Lions Mane"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper.minus",
+  "order": [
+    "hero_v4",
+    "trust_icons",
+    "usp_section",
+    "product_selection",
+    "video_section",
+    "image_with_text_icon",
+    "featured_product_2",
+    "call_to_action"
+  ]
 }
