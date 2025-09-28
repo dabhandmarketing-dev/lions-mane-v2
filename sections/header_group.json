@@ -1,1 +1,38 @@
-{"type":"header","name":"Header Group","sections":{"header":{"type":"header","settings":{}}},"order":["header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement_bar_ezifi7": {
+      "type": "announcement_bar",
+      "name": "Announcement Bar",
+      "settings": {
+        "url_slide_link": "shopify://products/lions-mane-gummies-2-500mg",
+        "image_slide_icon": "shopify://shop_images/Mushroom_Front.webp",
+        "text_slide_text": "Free UK shipping when you spent £50",
+        "text_badge_text": "Try Now"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "text_success_headline": "Congratulations 🎉",
+        "text_success_text": "Nice one! You’ve unlocked free shipping!",
+        "free_shipping": "100",
+        "menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_ezifi7",
+    "header"
+  ]
+}
