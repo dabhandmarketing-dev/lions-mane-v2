@@ -16,11 +16,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-grid">
-                  {% render 'product_item', product: product %}
-                  {% render 'product_item', product: product %}
-                  {% render 'product_item', product: product %}
-                </div>
+                {% for product in collection.products %}    <div li-for="product in collection.products" class="product-grid">
+                                    
+                  
+                            {% render 'product_item', product: product %}
+                            
+                  
+                            {% render 'product_item', product: product %}
+                            
+                  
+                            {% render 'product_item', product: product %}
+                            
+                
+                        </div>
+{% endfor %}
               </div>
             </div>
           </div>
