@@ -1,1 +1,37 @@
-{"type":"footer","name":"Footer Group","sections":{"footer":{"type":"footer","settings":{}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "social_icons_HD3tmW": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "#",
+            "image_social_logo": "shopify://shop_images/instagram-line.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_HD3tmW"
+      ],
+      "settings": {
+        "url_footer_logo_link": "",
+        "richtext_footer_slogan": "<p>Think Better. Feel Better. <strong>Do Better. </strong></p>"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
