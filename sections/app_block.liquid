@@ -1,0 +1,29 @@
+<div class="padding-global">
+          <div class="container-large">
+            <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% endcase %}
+{% endfor %}
+
+    </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "App Block",
+    "class": "section",
+    "blocks": [
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "App Block",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
