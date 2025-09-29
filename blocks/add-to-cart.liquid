@@ -1,39 +1,137 @@
 <div li-block="Add to Cart">
                     
                     
-                    <div class="product-header_form-block w-form">
+                    <div class="product-header_form-block-2 w-form">
                       {% form 'product', product, class: 'product-header_default-state' %}
 {% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
     
                           <template x-for="(option, optionKey) in product.options" :key="optionKey">
-    <div li-element="product-options-loop" class="product-header_option" data-ProductVariantsLoop="true">
+    <div li-element="product-options-loop" class="product-header_option-2" data-ProductVariantsLoop="true">
                             <div li-element="product-options-name" x-text="option">Variant</div>
                             <div class="product-header_radio-list"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
-    <label li-element="product-option-loop" class="product-header_radio w-radio">
-                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"><span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio-6" x-text="variantName" :for="variantName">XS</span>
+    <label li-element="product-option-loop" class="product-header_radio-2 w-radio">
+                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button-2 w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"><span li-element="product-option-name" class="text-size-regular w-form-label" for="radio" x-text="variantName" :for="variantName">XS</span>
                               </label></template></div>
                           </div></template>
                             </div>
 {% endif %}
-                        <div class="product-header_add-to-cart-wrapper"><input class="form_input w-input" maxlength="256" name="properties[Note]" data-name="Field" placeholder="Note" type="text" id="field">
+                        <div class="product-header_add-to-cart-wrapper">
                           <template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper">
-        <input class="form_input is-quantity w-input" maxlength="256" name="quantity-4" li-element="add-to-cart-quantity" data-name="Quantity 4" placeholder="1" type="number" id="quantity-4" required="" x-model="quantity">
-                            <a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart($event, true)" :disabled="!addToCartButton">Add to cart</a>
+        
+                            <div class="mini-cart_line-item_quantity">
+                              <a x-on:click="quantity--" href="#" class="mini-cart_line-item_quantity-adjust xl">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust xl" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                              <a x-on:click="quantity++" href="#" class="mini-cart_line-item_quantity-adjust xl">+</a>
+                            </div>
+                            <div class="button-group-2">
+                              <a li-element="add-to-cart" href="#" class="button2 is-v2 w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                                <div class="button5_inner is-v2">
+                                  <div class="button2_text">Try Lions Mane</div>
+                                  <div class="button2_icon-wrap"><img loading="lazy" src="{{ 'button2-arrow.svg' | asset_url }}" alt="" class="button2_icon"></div>
+                                </div>
+                                <div class="button5_gradient is-v2"></div>
+                                <div bind="90e0e776-af58-4836-0cc8-837fb6f002e5" class="custom-styles hide w-embed">
+                                  <style>
+	html {
+		font-size: 16px;
+	}
+	h1, .heading-style-h1 {
+		font-size: 2.01em;
+	}
+	h2, .heading-style-h2 {
+		font-size: 1.75em;
+	}
+	h3, .heading-style-h3 {
+		font-size: 1.52em;
+	}
+	h4, .heading-style-h4 {
+		font-size: 1.32em;
+	}
+	h5, .heading-style-h5 {
+		font-size: 1.15em;
+	}
+	@media (min-width: 478px) {
+		html {
+			font-size: calc(16px + 0 * ((100vw - 478px) / 514));
+		}
+	}
+	@media (min-width: 992px) {
+		html {
+			font-size: 16px;
+		}
+		h1, .heading-style-h1 {
+			font-size: 3.71em;
+		}
+		h2, .heading-style-h2 {
+			font-size: 2.86em;
+		}
+		h3, .heading-style-h3 {
+			font-size: 2.2em;
+		}
+		h4, .heading-style-h4 {
+			font-size: 1.69em;
+		}
+		h5, .heading-style-h5 {
+			font-size: 1.3em;
+		}
+	}
+	@media (min-width: 1440px) {
+		html {
+			font-size: calc(16px + 2 * ((100vw - 1440px) / 480));
+		}
+	}
+	@media (min-width: 1920px) {
+		html {
+			font-size: 18px;
+		}
+	}
+a {
+	color: white;
+  text-decoration: none;
+}	
+.button2 .button2_icon-wrap {
+	left: calc(100% - 0.5em);
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon-wrap {
+	left: 0.5em;
+  transform: translateX(0);
+  background: rgba(255,255,255,0);
+}
+.button2 .button2_text {
+	position:relative;
+	left:0;
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_text {
+	left:3.5em;
+}
+.button2 .button2_icon {
+	filter: invert(0%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon {
+	filter: invert(100%);
+}
+</style>
+                                </div>
+                              </a>
+                            </div>
                                   </div>
     </template>
                           <template x-if="!selected_or_first_available_variant.available">
             <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
         
-                            <a href="#" class="button is-secondary max-width-full pointer-events-off w-button">Not in Stock</a>
+                            <a href="#" class="button-21 is-secondary max-width-full pointer-events-off w-button">Not in Stock</a>
                                   </div>
     </template>
                         </div>
                       {% endform %}
-                      <div class="hide w-form-done">
+                      <div class="hide-2 w-form-done">
                         <div>Thank you! Your submission has been received!</div>
                       </div>
-                      <div class="hide w-form-fail">
+                      <div class="hide-2 w-form-fail">
                         <div>Oops! Something went wrong while submitting the form.</div>
                       </div>
                     </div>
