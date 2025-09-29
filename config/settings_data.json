@@ -60,7 +60,7 @@
           "mobile_nav_offset_top": 0,
           "shadow": true,
           "border_radius": 4,
-          "background_color": "#000000",
+          "background_color": "#111111",
           "text_color": "#ffffff",
           "primary_color": "#bc8c22",
           "btn_text_color": "#ffffff",
