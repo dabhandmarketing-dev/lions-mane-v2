@@ -211,6 +211,39 @@
         "text_button_text": "Try Lions Mane"
       }
     },
+    "image_with_text_righ_y79fyp": {
+      "type": "image_with_text_righ",
+      "blocks": {
+        "icon_with_text_D6J7QH": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/BrainHealth.svg",
+            "text_icon_heading": "Enhance Immune Function",
+            "richtext_icon_with_text_paragraph": "<p>Studies show Lion’s Mane contains powerful polysaccharides that boost immune cell activity, helping you stay healthier.</p>"
+          }
+        },
+        "icon_with_text_EFJigq": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/Brain_Fog.svg",
+            "text_icon_heading": "Natural Immune Support",
+            "richtext_icon_with_text_paragraph": "<p>Lion’s Mane supports your immune system, making it easier to stay well and protect against common illnesses.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_D6J7QH",
+        "icon_with_text_EFJigq"
+      ],
+      "name": "Image with Text (Rig",
+      "settings": {
+        "text_heading": "Boost Your Immunity",
+        "richtext_paragraph": "<p>Lion’s Mane strengthens the immune system, enhancing the body’s natural defences. Its polysaccharides and bioactive compounds help bolster immune function, making you more resilient against illnesses.</p>",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "image_large_image": "shopify://shop_images/Immunity.webp"
+      }
+    },
     "17591549495080fe92": {
       "type": "apps",
       "blocks": {
@@ -248,6 +281,7 @@
     "featured_product_2",
     "image_with_text_righ_9HqnpH",
     "image_with_text_left_TMTi9P",
+    "image_with_text_righ_y79fyp",
     "17591549495080fe92",
     "call_to_action"
   ]
