@@ -251,22 +251,6 @@
         "image_large_image": "shopify://shop_images/Immunity.webp"
       }
     },
-    "17591549495080fe92": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_XEgPQH": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_XEgPQH"
-      ],
-      "settings": {}
-    },
     "accordions_Hzc4WG": {
       "type": "accordions",
       "blocks": {
@@ -388,7 +372,6 @@
     "image_with_text_righ_9HqnpH",
     "image_with_text_left_TMTi9P",
     "image_with_text_righ_y79fyp",
-    "17591549495080fe92",
     "accordions_Hzc4WG",
     "call_to_action"
   ]
