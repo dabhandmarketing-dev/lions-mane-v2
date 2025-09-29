@@ -266,15 +266,6 @@
       ],
       "settings": {}
     },
-    "call_to_action": {
-      "type": "call_to_action",
-      "settings": {
-        "text_heading": "Try Lions Mane",
-        "richtext_paragraph": "<p> Enhance your mental clarity, boost your mood, and feel your best every day. <br/><strong>Think sharper, feel calmer, and achieve more</strong></p>",
-        "url_button_link": "shopify://collections/all",
-        "text_button_text": "Try Lions Mane"
-      }
-    },
     "accordions_Hzc4WG": {
       "type": "accordions",
       "blocks": {
@@ -322,6 +313,42 @@
             "url_find_out_more_link": "",
             "text_find_out_more_text": "Find Out More"
           }
+        },
+        "faq_rbRVGV": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "Are there any side effects of taking Lion’s Mane?",
+            "richtext_faq_answer": "<p>Lion’s Mane is well-tolerated by most individuals. Mild side effects such as digestive discomfort or skin rashes may occur in rare cases. </p><p>-</p><p>These side effects are usually temporary and subside as the body adjusts to the supplement. If you experience persistent or severe adverse reactions, discontinue use and consult a healthcare professional.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_6eQydd": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "How long does it take to see the benefits of Lion’s Mane?",
+            "richtext_faq_answer": "<p>The time it takes to experience the benefits of Lion’s Mane can vary depending on the individual and their specific health conditions. </p><p>-</p><p>Some users report noticeable improvements in cognitive function and mood within a few weeks of consistent use, while for others, it may take a few months. Long-term use is often recommended to achieve and maintain the full benefits of this medicinal mushroom.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_KnnG3P": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "Can Lion’s Mane help with neurodegenerative diseases?",
+            "richtext_faq_answer": "<p>Research suggests that Lion’s Mane may offer protective effects against neurodegenerative diseases such as Alzheimer’s and Parkinson’s. </p><p>-</p><p>It is believed to work by reducing the accumulation of amyloid-beta plaques, which are associated with Alzheimer’s disease, and by promoting the regeneration of damaged neurons. Animal studies and preliminary human trials have shown promising results, but more extensive clinical research is needed to fully understand its potential in this area.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_EenH7i": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "Can I take Lion’s Mane with other supplements or medications?",
+            "richtext_faq_answer": "<p>Lion’s Mane is generally safe to take with other supplements. However, if you are currently taking medications, especially those that affect the immune system or have known interactions with certain foods, it is crucial to consult with a healthcare professional before adding Lion’s Mane to your regimen. </p><p>-</p><p>This ensures there are no potential interactions and that it is safe for your specific health conditions.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
         }
       },
       "block_order": [
@@ -329,10 +356,23 @@
         "faq_V7qzc4",
         "faq_Ptjp8G",
         "faq_age848",
-        "faq_xydbLY"
+        "faq_xydbLY",
+        "faq_rbRVGV",
+        "faq_6eQydd",
+        "faq_KnnG3P",
+        "faq_EenH7i"
       ],
       "name": "Accordions",
       "settings": {}
+    },
+    "call_to_action": {
+      "type": "call_to_action",
+      "settings": {
+        "text_heading": "Try Lions Mane",
+        "richtext_paragraph": "<p> Enhance your mental clarity, boost your mood, and feel your best every day. <br/><strong>Think sharper, feel calmer, and achieve more</strong></p>",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane"
+      }
     }
   },
   "layout": "theme",
@@ -348,7 +388,7 @@
     "image_with_text_left_TMTi9P",
     "image_with_text_righ_y79fyp",
     "17591549495080fe92",
-    "call_to_action",
-    "accordions_Hzc4WG"
+    "accordions_Hzc4WG",
+    "call_to_action"
   ]
 }
