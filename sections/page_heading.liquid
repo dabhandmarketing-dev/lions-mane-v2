@@ -7,7 +7,17 @@
                     <div class="margin-bottom margin-small">
                       <div class="heading-style-h2-7 is-subhead">LEARN ABOUT LIONS MANE</div>
                     </div>
-                    <p class="heading-style-h1-4 is-largetext">BLOG<span class="outline-text-2"> &</span> news</p>
+                    <div class="div-block-588">
+                      <p class="heading-style-h1-4 is-largetext">
+{{ section.settings.text_heading }}
+</p>
+                      <p class="heading-style-h1-4 is-largetext outline-text">
+{{ section.settings.text_outline }}
+</p>
+                      <p class="heading-style-h1-4 is-largetext">
+{{ section.settings.text_heading_2 }}
+</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,6 +50,24 @@
     "name": "Page Heading",
     "class": "section_blog-list-2",
     "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "BLOG"
+        },
+        {
+            "id": "text_outline",
+            "type": "text",
+            "label": "Outline",
+            "default": "&amp;"
+        },
+        {
+            "id": "text_heading_2",
+            "type": "text",
+            "label": "Heading 2",
+            "default": "News"
+        },
         {
             "id": "image_shroom_top_left",
             "type": "image_picker",
