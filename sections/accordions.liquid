@@ -1,0 +1,74 @@
+<div class="container-default w-container">
+          {% for block in section.blocks %}
+    {% if block.type == "faq" %}
+                    <div li-block="faq" class="faq-question-wrap">
+                                    
+            
+                                    <a href="#" class="faq-question-bar w-inline-block">
+              <div class="question-title">
+{{ block.settings.text_faq_title }}
+</div>
+              <div data-is-ix2-target="1" class="animation" data-w-id="3b431f57-b414-67be-23df-47d054ef7706" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5d5cf17906643e1cff7f5f60/5d7b8f1d3a8c25c5444ec59f_animation-w1024-h1024%20(1).json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="3.036369579362504" data-duration="0" data-ix2-initial-state="12"></div>
+            </a>
+                                    
+            
+                                    <div class="faq-content">
+              <div class="faq-paragraph">
+                <div class="w-richtext"> {{ block.settings.richtext_faq_answer }} </div>
+                <div class="_10px-spacer-2"></div>
+                <a href="{{ block.settings.url_find_out_more_link }}" class="morecontainer w-inline-block"> <p class="text-size-regular-2">{{ block.settings.text_find_out_more_text }}</p><img loading="lazy" src="https://uploads-ssl.webflow.com/66762a278b3e636bb85f4c56/66762a278b3e636bb85f4c76_Right%20arrow.svg" alt="" class="arrow-icon"> </a>
+                <div class="_10px-spacer-2"></div>
+              </div>
+            </div>
+                                    
+          
+                            </div>
+            {% endif %}
+{% endfor %}
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Accordions",
+    "class": "section",
+    "blocks": [
+        {
+            "name": "faq",
+            "type": "faq",
+            "settings": [
+                {
+                    "id": "text_faq_title",
+                    "type": "text",
+                    "label": "FAQ Title",
+                    "default": "Who is this for?"
+                },
+                {
+                    "id": "richtext_faq_answer",
+                    "type": "richtext",
+                    "label": "FAQ Answer",
+                    "default": "<p>\n                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n              <\/p>"
+                },
+                {
+                    "id": "url_find_out_more_link",
+                    "type": "url",
+                    "label": "Find Out More Link"
+                },
+                {
+                    "id": "text_find_out_more_text",
+                    "type": "text",
+                    "label": "Find Out More Text",
+                    "default": "Find Out More"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Accordions",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "faq"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
