@@ -2,9 +2,7 @@
           <div class="container-large">
             <div class="footer-all-links-flex">
               <div class="footer3_left-wrapper">
-                <div class="margin-bottom">
-                  <a href="{{ section.settings.url_footer_logo_link }}" class="footer3_logo-link w-nav-brand"> {% if section.settings.image_footer_logo %} {{ section.settings.image_footer_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer-logo-image' }} {% else %} <img loading="lazy" alt="" src="{{ 'Mobile-Logo_1Mobile-Logo.webp' | asset_url }}" class="footer-logo-image"> {% endif %} </a>
-                </div>
+                <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="footer-logo w-nav-brand"><img loading="lazy" src="{{ 'Mobile-Logo_1Mobile-Logo.webp' | asset_url }}" alt="" class="navbar2_logo is-desktop"></a>
                 <div class="margin-bottom margin-small max-350px">
                   <div class="text-size-regular-2"> {{ section.settings.richtext_footer_slogan }} </div>
                 </div>
@@ -369,16 +367,6 @@ customElements.define('localization-form', LocalizationForm);
         }
     ],
     "settings": [
-        {
-            "id": "url_footer_logo_link",
-            "type": "url",
-            "label": "Footer Logo Link"
-        },
-        {
-            "id": "image_footer_logo",
-            "type": "image_picker",
-            "label": "Footer Logo"
-        },
         {
             "id": "richtext_footer_slogan",
             "type": "richtext",
