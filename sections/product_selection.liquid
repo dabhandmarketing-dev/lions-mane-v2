@@ -35,10 +35,26 @@
           </div>
         </div>
         <div class="pricing-bg-element_wrap">
-          <div class="price-bg-element is-top-left-wrap"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt="" class="price-bg-element is-top-left"></div>
-          <div class="price-bg-element is-bottom-left-wrap"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt="" class="price-bg-element is-bottom-left"></div>
-          <div class="price-bg-element is-top-right-wrap"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt="" class="price-bg-element is-top-right"></div>
-          <div class="price-bg-element is-middle-right-wrap"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt="" class="price-bg-element is-middle-right"></div>
+          <div class="price-bg-element is-top-left-wrap">{% if section.settings.image_shroom_top_left %}
+{{ section.settings.image_shroom_top_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'price-bg-element is-top-left' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="price-bg-element is-top-left">
+{% endif %}</div>
+          <div class="price-bg-element is-bottom-left-wrap">{% if section.settings.image_shroom_bottom_left %}
+{{ section.settings.image_shroom_bottom_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'price-bg-element is-bottom-left' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="price-bg-element is-bottom-left">
+{% endif %}</div>
+          <div class="price-bg-element is-top-right-wrap">{% if section.settings.image_shroom_top_right %}
+{{ section.settings.image_shroom_top_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'price-bg-element is-top-right' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="price-bg-element is-top-right">
+{% endif %}</div>
+          <div class="price-bg-element is-middle-right-wrap">{% if section.settings.image_shroom_bottom_right %}
+{{ section.settings.image_shroom_bottom_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'price-bg-element is-middle-right' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="price-bg-element is-middle-right">
+{% endif %}</div>
           <div class="price-bg-element is-bottom-right-wrap"></div>
         </div> {% schema %} {
     "tag": "section",
@@ -56,6 +72,26 @@
             "type": "text",
             "label": "Large Heading",
             "default": "<span class=\"outline-text\">TRY<\/span> Lions Mane"
+        },
+        {
+            "id": "image_shroom_top_left",
+            "type": "image_picker",
+            "label": "Shroom Top Left"
+        },
+        {
+            "id": "image_shroom_bottom_left",
+            "type": "image_picker",
+            "label": "Shroom Bottom Left"
+        },
+        {
+            "id": "image_shroom_top_right",
+            "type": "image_picker",
+            "label": "Shroom Top Right"
+        },
+        {
+            "id": "image_shroom_bottom_right",
+            "type": "image_picker",
+            "label": "Shroom Bottom Right"
         }
     ],
     "presets": [
