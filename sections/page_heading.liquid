@@ -5,18 +5,20 @@
                 <div class="text-align-center">
                   <div data-w-id="94d58926-10cb-afb3-2cea-63f8eaf714fc" style="opacity:0" class="max-width-full">
                     <div class="margin-bottom margin-small">
-                      <div class="heading-style-h2-7 is-subhead">LEARN ABOUT LIONS MANE</div>
+                      <div class="heading-style-h2-7 is-subhead">
+{{ section.settings.text_pre_heading }}
+</div>
                     </div>
                     <div class="div-block-588">
-                      <p class="heading-style-h1-4 is-largetext">
+                      <div class="heading-style-h1-4 is-largetext">
 {{ section.settings.text_heading }}
-</p>
-                      <p class="heading-style-h1-4 is-largetext outline-text">
+</div>
+                      <div class="heading-style-h1-4 is-largetext outline-text">
 {{ section.settings.text_outline }}
-</p>
-                      <p class="heading-style-h1-4 is-largetext">
+</div>
+                      <div class="heading-style-h1-4 is-largetext">
 {{ section.settings.text_heading_2 }}
-</p>
+</div>
                     </div>
                   </div>
                 </div>
@@ -50,6 +52,12 @@
     "name": "Page Heading",
     "class": "section_blog-list-2",
     "settings": [
+        {
+            "id": "text_pre_heading",
+            "type": "text",
+            "label": "Pre-Heading",
+            "default": "LEARN ABOUT LIONS MANE"
+        },
         {
             "id": "text_heading",
             "type": "text",
