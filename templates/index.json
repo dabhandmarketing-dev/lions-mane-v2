@@ -12,6 +12,7 @@
     "hero_v4": {
       "type": "hero_v4",
       "settings": {
+        "text_gold_text": "LIONS MANE",
         "text_bold_heading": "Think",
         "text_outline_heading": "Better.",
         "url_button_link": "",
@@ -138,8 +139,7 @@
       "settings": {
         "text_top_text": "Experience a new level of",
         "text_solid_heading": "Mental",
-        "text_outline_text": "Clarity",
-        "video": "shopify://files/videos/Paul Stamets telling Joe Rogan about the incredible benefits of Lions Mane mushrooms.mp4"
+        "text_outline_text": "Clarity"
       }
     },
     "featured_product_2": {
@@ -212,7 +212,9 @@
         "text_heading": "Feel Better. Naturally",
         "richtext_paragraph": "<p>Lion’s Mane helps reduce anxiety and promotes a better mood. It supports emotional well-being by balancing brain chemicals and reducing inflammation, which can contribute to feelings of stress. </p>",
         "url_button_link": "shopify://collections/all",
-        "text_button_text": "Try Lions Mane"
+        "text_button_text": "Try Lions Mane",
+        "url_find_out_more_link": "",
+        "text_find_out_more_text": "Find Out More"
       }
     },
     "image_with_text_righ_y79fyp": {
