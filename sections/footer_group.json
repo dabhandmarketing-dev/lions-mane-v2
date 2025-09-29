@@ -35,7 +35,10 @@
       ],
       "settings": {
         "image_footer_logo": "shopify://shop_images/Lions_Mane_Left.webp",
-        "richtext_footer_slogan": "<p>Think Better. Feel Better. <strong>Do Better. </strong></p>"
+        "richtext_footer_slogan": "<p>Think Better. Feel Better. <strong>Do Better. </strong></p>",
+        "text_quick_links_title": "Pages",
+        "text_products_title": "Products",
+        "text_contact_title": "Contact"
       }
     }
   },
