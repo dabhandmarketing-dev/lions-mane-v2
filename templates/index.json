@@ -138,45 +138,35 @@
         "video": "shopify://files/videos/Paul Stamets telling Joe Rogan about the incredible benefits of Lions Mane mushrooms.mp4"
       }
     },
-    "image_with_text_icon": {
-      "type": "image_with_text_icon",
-      "blocks": {
-        "icon-with-text": {
-          "type": "icon-with-text",
-          "name": "Icon with Text",
-          "settings": {
-            "image_icon": "shopify://shop_images/BrainHealth.svg",
-            "text_icon_heading": "Support Brain Health",
-            "richtext_icon_with_text_paragraph": "<p>Studies show Lion’s Mane improves cognitive function and memory, helping you stay focused and clear-headed.</p>"
-          }
-        },
-        "icon_with_text_KirtLx": {
-          "type": "icon-with-text",
-          "name": "Icon with Text",
-          "settings": {
-            "image_icon": "shopify://shop_images/Brain_Fog.svg",
-            "text_icon_heading": "Reduce Brain Fog",
-            "richtext_icon_with_text_paragraph": "<p>Lion’s Mane reduces brain fog and promotes mental clarity, making it easier to think clearly and stay focused throughout the day.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon-with-text",
-        "icon_with_text_KirtLx"
-      ],
-      "settings": {
-        "text_heading": "Brain Fog. Be Gone",
-        "richtext_paragraph": "<p>Lion’s Mane reduces brain fog, promoting mental clarity and sharpness. It supports brain health by enhancing nerve growth factor (NGF) production, crucial for neuron maintenance and regeneration. </p>",
-        "url_button_link": "",
-        "text_button_text": "Try Lions Mane",
-        "image_large_image": "shopify://shop_images/Brain_Fog.webp"
-      }
-    },
     "featured_product_2": {
       "type": "featured_product_2",
       "settings": {
         "product_featured_product": "lions-mane-gummies-2-500mg",
         "text_headline": "Description"
+      }
+    },
+    "content_3_C7BUWq": {
+      "type": "content_3",
+      "blocks": {
+        "icon_with_text_KGeY9U": {
+          "type": "icon-with-text",
+          "settings": {
+            "text_icon_heading": "Support Brain Health",
+            "richtext_icon_with_text_paragraph": "<p>Studies show Lion’s Mane improves cognitive function and memory, helping you stay focused and clear-headed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_KGeY9U"
+      ],
+      "name": "Content 3",
+      "settings": {
+        "image_large_image": "shopify://shop_images/Lions_Mane_Bottle.webp",
+        "text_heading": "Brain Fog. Be Gone",
+        "richtext_paragraph": "<p>Lion’s Mane reduces brain fog, promoting mental clarity and sharpness. It supports brain health by enhancing nerve growth factor (NGF) production, crucial for neuron maintenance and regeneration. </p>",
+        "url_button_link": "",
+        "text_button_text": "Try Lions Mane",
+        "image_position": "left"
       }
     },
     "call_to_action": {
@@ -197,8 +187,8 @@
     "usp_section",
     "product_selection",
     "video_section",
-    "image_with_text_icon",
     "featured_product_2",
+    "content_3_C7BUWq",
     "call_to_action"
   ]
 }
