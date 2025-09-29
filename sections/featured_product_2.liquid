@@ -129,7 +129,7 @@
                     </div>
                   </div>
                   <div class="product-header_form-block-2 w-form">
-                    {% form 'product', class: 'product-header_default-state' %}
+                    {% form 'product', product, class: 'product-header_default-state' %}
 {% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
     
                         <template x-for="(option, optionKey) in product.options" :key="optionKey">
