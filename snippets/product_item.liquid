@@ -14,9 +14,9 @@
                       <div class="spacer-xxsmall"></div>
                       <a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link w-inline-block">
                         <div class="product-item_left">
-                          <div li-object="product.vendor" class="text-size-small">{{ product.vendor }}</div>
-                          <div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div>
+                          <div li-object="product.title" class="heading-style-h4">{{ product.title }}</div>
                         </div>
+                        <div class="spacer-xsmall"></div>
                         <div class="product-item_price">
                           {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
     
@@ -31,7 +31,101 @@
                         <div class="product-item_form-wrapper">
                           {% if product.available == true %}    <div li-if="product.available == true">
     
-                            <a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart($event, true)" :disabled="!addToCartButton">Add to Cart</a>
+                            <a li-element="add-to-cart" data-w-id="3ae0fe8d-f46d-dbee-5f98-3d05422122f4" href="https://lionsmanenootropic.myshopify.com/cart/add?id[]=48706333049112&quantity[]=1" class="button2 is-v2 w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                              <div class="button5_inner is-v2">
+                                <div class="button2_text">
+{{ section.settings.text_button_text }}
+</div>
+                                <div class="button2_icon-wrap"><img loading="lazy" src="{{ 'add-line.svg' | asset_url }}" alt="" class="button2_icon"></div>
+                              </div>
+                              <div class="button5_gradient is-v2"></div>
+                              <div bind="90e0e776-af58-4836-0cc8-837fb6f002e5" class="custom-styles hide w-embed">
+                                <style>
+	html {
+		font-size: 16px;
+	}
+	h1, .heading-style-h1 {
+		font-size: 2.01em;
+	}
+	h2, .heading-style-h2 {
+		font-size: 1.75em;
+	}
+	h3, .heading-style-h3 {
+		font-size: 1.52em;
+	}
+	h4, .heading-style-h4 {
+		font-size: 1.32em;
+	}
+	h5, .heading-style-h5 {
+		font-size: 1.15em;
+	}
+	@media (min-width: 478px) {
+		html {
+			font-size: calc(16px + 0 * ((100vw - 478px) / 514));
+		}
+	}
+	@media (min-width: 992px) {
+		html {
+			font-size: 16px;
+		}
+		h1, .heading-style-h1 {
+			font-size: 3.71em;
+		}
+		h2, .heading-style-h2 {
+			font-size: 2.86em;
+		}
+		h3, .heading-style-h3 {
+			font-size: 2.2em;
+		}
+		h4, .heading-style-h4 {
+			font-size: 1.69em;
+		}
+		h5, .heading-style-h5 {
+			font-size: 1.3em;
+		}
+	}
+	@media (min-width: 1440px) {
+		html {
+			font-size: calc(16px + 2 * ((100vw - 1440px) / 480));
+		}
+	}
+	@media (min-width: 1920px) {
+		html {
+			font-size: 18px;
+		}
+	}
+a {
+	color: white;
+  text-decoration: none;
+}	
+.button2 .button2_icon-wrap {
+	left: calc(100% - 0.5em);
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon-wrap {
+	left: 0.5em;
+  transform: translateX(0);
+  background: rgba(255,255,255,0);
+}
+.button2 .button2_text {
+	position:relative;
+	left:0;
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_text {
+	left:3.5em;
+}
+.button2 .button2_icon {
+	filter: invert(0%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon {
+	filter: invert(100%);
+}
+</style>
+                              </div>
+                            </a>
                               </div>
 {% endif %}
                           {% if product.available != true %}    <div li-if="product.available != true">
