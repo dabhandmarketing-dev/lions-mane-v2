@@ -31,11 +31,7 @@
             </div>
           </div>
         </div>
-        <div class="home-hero-background_wrap">{% if section.settings.image_lion_bg %}
-{{ section.settings.image_lion_bg | image_url: width: 1000 | image_tag: class: 'home-hero-background_image', sizes: '(max-width: 1400px) 100vw, 1400px', data-w-id: 'c41963d6-64ae-2f79-f3bf-632fcf0fa766', loading: 'lazy' }}
-{% else %}
-<img class="home-hero-background_image" src="{{ 'LionsFog.jpg' | asset_url }}" alt="" sizes="(max-width: 1400px) 100vw, 1400px" data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa766" loading="lazy" srcset="{{ 'LionsFog-p-500.jpg' | asset_url }} 500w, {{ 'LionsFog-p-800.jpg' | asset_url }} 800w, {{ 'LionsFog-p-1080.jpg' | asset_url }} 1080w, {{ 'LionsFog.jpg' | asset_url }} 1400w">
-{% endif %}
+        <div class="home-hero-background_wrap">
           <div class="home-hero-background_overlay is-v2"></div>
           <div class="home-hero-bg-element_wrap is-top-left">
             <div class="home-hero-top-left-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
@@ -81,11 +77,6 @@
             "id": "image_pouches",
             "type": "image_picker",
             "label": "Pouches"
-        },
-        {
-            "id": "image_lion_bg",
-            "type": "image_picker",
-            "label": "Lion BG"
         }
     ],
     "presets": [

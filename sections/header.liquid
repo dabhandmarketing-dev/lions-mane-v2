@@ -23,7 +23,11 @@
                         </div>
 {% endfor %}
             </nav>
-            <a href="{{ routes.root_url }}" li-object:href="routes.root_url" data-w-id="9132635a-7891-b0d1-9b20-ecb0d5a86dfb" class="nav_logo-link w-nav-brand"><img loading="lazy" src="{{ 'Logo_1Logo.webp' | asset_url }}" alt="" class="navbar2_logo is-desktop"></a>
+            <a href="{{ routes.root_url }}" li-object:href="routes.root_url" data-w-id="9132635a-7891-b0d1-9b20-ecb0d5a86dfb" class="nav_logo-link w-nav-brand">{% if section.settings.image_logo %}
+{{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar2_logo is-desktop' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Logo_1Logo.webp' | asset_url }}" class="navbar2_logo is-desktop">
+{% endif %}</a>
             <div class="split-contant navbar-right">
               <div class="nav_shop-icons">
                 {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
@@ -624,6 +628,11 @@ a {
     "name": "Header",
     "class": "section_navbar",
     "settings": [
+        {
+            "id": "image_logo",
+            "type": "image_picker",
+            "label": "Logo"
+        },
         {
             "id": "text_success_headline",
             "type": "text",
