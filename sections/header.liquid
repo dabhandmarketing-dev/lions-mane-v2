@@ -476,7 +476,7 @@
                                     <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
                                     <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
                                   </div>
-                                  <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
+                                  <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
                                 </div>
                               </li></template>
                             </ul>
@@ -502,7 +502,7 @@
                             </div>
                             <a x-bind:href="'/checkout'" href="https://lionsmanenootropic.myshopify.com/cart/add?id[]=48706333049112&quantity[]=1" class="button2 is-v2 w-inline-block">
                               <div class="button5_inner is-v2">
-                                <div class="button2_text">Try Lions Mane</div>
+                                <div class="button2_text">Checkout</div>
                                 <div class="button2_icon-wrap"><img loading="lazy" src="{{ 'button2-arrow.svg' | asset_url }}" alt="" class="button2_icon"></div>
                               </div>
                               <div class="button5_gradient is-v2"></div>
@@ -593,6 +593,9 @@ a {
 </style>
                               </div>
                             </a>
+                            <div class="price-securepayment_wrap"><img loading="lazy" src="{{ 'Padlock-icon.svg' | asset_url }}" alt="" class="price-padlock-icon">
+                              <div class="text-size-regular-5 text-weight-bold">Secure payment</div>
+                            </div>
                           </div>
                         </div>
                         <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
