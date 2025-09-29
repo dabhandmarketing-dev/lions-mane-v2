@@ -38,7 +38,9 @@
         "richtext_footer_slogan": "<p>Think Better. Feel Better. <strong>Do Better. </strong></p>",
         "text_quick_links_title": "Pages",
         "text_products_title": "Products",
-        "text_contact_title": "Contact"
+        "text_contact_title": "Contact",
+        "url_email_link": "mailto:hello@lionsmane.co.uk",
+        "text_email_text": "hello@lionsmane.co.uk"
       }
     }
   },
