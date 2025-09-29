@@ -3731,8 +3731,8 @@ figcaption {
 }
 
 .social-grid.xs {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
 }
 
 .social-icon-square-2 {
@@ -3745,26 +3745,21 @@ figcaption {
   height: 36px;
   min-height: 36px;
   text-decoration: none;
-  transition: all .3s;
   display: flex;
 }
 
 .social-icon-square-2:hover {
+  background-image: linear-gradient(90deg, var(--base-color-brand--gold-left), var(--base-color-brand--gold-right));
   color: #fff;
-  background-color: #226767;
 }
 
 .social-icon-square-2.xs-8 {
   color: var(--base-color-neutral--neutral-lighter);
-  width: 24px;
-  min-width: 24px;
-  height: 24px;
-  min-height: 24px;
 }
 
 .social-icon-square-2.xs-8:hover {
+  background-image: linear-gradient(90deg, var(--base-color-brand--gold-left), var(--base-color-brand--gold-right));
   color: #494949;
-  background-color: #d3efeb;
 }
 
 .social-logo {
@@ -5599,6 +5594,34 @@ figcaption {
   grid-row-gap: 1rem;
   flex-flow: column;
   display: flex;
+}
+
+.announcement-icons {
+  background-color: var(--base-color-neutral--neutral-darker);
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  min-height: 36px;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.announcement-icons:hover {
+  color: #fff;
+  background-color: #226767;
+}
+
+.announcement-icons.xs-8 {
+  color: var(--base-color-neutral--neutral-lighter);
+}
+
+.announcement-icons.xs-8:hover {
+  background-image: linear-gradient(90deg, var(--base-color-brand--gold-left), var(--base-color-brand--gold-right));
+  color: #494949;
 }
 
 @media screen and (min-width: 1280px) {
@@ -7640,6 +7663,10 @@ figcaption {
 
   .li-component_item {
     padding: .9rem;
+  }
+
+  .announcement-icons {
+    border-radius: 6px;
   }
 }
 
