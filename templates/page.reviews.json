@@ -13,6 +13,9 @@
       "type": "page_heading",
       "name": "Page Heading",
       "settings": {
+        "text_heading": "Blog",
+        "text_outline": "&",
+        "text_heading_2": "News",
         "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
         "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
         "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
