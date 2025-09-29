@@ -11,6 +11,18 @@
   "current": {
     "favicon": "shopify://shop_images/LionsManeFavicon.png",
     "apple_touch_icon": "shopify://shop_images/LionsManeFavicon_cce558ba-c9cc-4696-8583-8e174734083c.png",
+    "sections": {
+      "login": {
+        "type": "login",
+        "settings": {
+          "text_login": "Login",
+          "text_no_account_yet": "No Account yet?",
+          "text_reset_password": "Reset Password",
+          "text_password_text": "In order to receive a new password, you need to enter your email address below, and we will send you an email with further instructions immediately.",
+          "text_forgot_password": "Forgot password?"
+        }
+      }
+    },
     "content_for_index": [],
     "blocks": {
       "733389323033596483": {
@@ -32,6 +44,29 @@
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": ""
+        }
+      },
+      "11356494674496455976": {
+        "type": "shopify://apps/froonze-loyalty-wishlist/blocks/loyalty/3c495b68-652c-468d-a0ef-5bad6935d104",
+        "disabled": false,
+        "settings": {}
+      },
+      "12046557757412368804": {
+        "type": "shopify://apps/froonze-loyalty-wishlist/blocks/customer_account_page/3c495b68-652c-468d-a0ef-5bad6935d104",
+        "disabled": false,
+        "settings": {
+          "style": "light",
+          "dropdownMenu": "slider",
+          "mobile_nav_offset_top": 0,
+          "shadow": true,
+          "border_radius": 4,
+          "background_color": "#ffffff",
+          "text_color": "#202202",
+          "primary_color": "#5873F9",
+          "btn_text_color": "#ffffff",
+          "max_width": 800,
+          "custom_css": "",
+          "account_page": ""
         }
       }
     }
