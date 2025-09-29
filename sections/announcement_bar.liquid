@@ -1,22 +1,24 @@
 <div class="banner-bar">
           <div class="uui-navbar01_container">
-            {% for link in linklists['announcement-menu'].links %}    <div li-for="link in linklists['announcement-menu'].links" class="nav05_top_left">
+            <div class="div-block-587">
+              {% for link in linklists['announcement-menu'].links %}    <div li-for="link in linklists['announcement-menu'].links" class="nav05_top_left">
                                     
-              
+                
                             <a href="{{ link.url }}" li-object:href="link.url" data-w-id="69c5c1e4-82fe-37cb-7b4c-5a5276e40211" class="uui-navbar01_link w-inline-block">
-                <div class="clip-5 tiny-2">
-                  <div class="hover-text-6 tiny-3">
-                    <div li-object="link.title">{{ link.title }}</div>
+                  <div class="clip-5 tiny-2">
+                    <div class="hover-text-6 tiny-3">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
+                    <div class="hover-text-6 tiny-3 bottom tiny-4">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
                   </div>
-                  <div class="hover-text-6 tiny-3 bottom tiny-4">
-                    <div li-object="link.title">{{ link.title }}</div>
-                  </div>
-                </div>
-              </a>
+                </a>
                             
-            
+              
                         </div>
 {% endfor %}
+            </div>
             <a href="{{ section.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if section.settings.image_slide_icon %} {{ section.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div class="paragraph-regular-5">{{ section.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ section.settings.text_badge_text }}</div> </a>
             <div class="div-block-585">
               <div class="social-media-link-wrap">
