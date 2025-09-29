@@ -16,7 +16,8 @@
         "text_outline_heading": "Better.",
         "url_button_link": "",
         "text_button_text": "Try Lions Mane",
-        "image_pouches": "shopify://shop_images/Bottles.webp"
+        "image_pouches": "shopify://shop_images/Bottles.webp",
+        "image_lion_bg": "shopify://shop_images/LionBG.jpg"
       }
     },
     "trust_icons": {
