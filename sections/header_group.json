@@ -11,17 +11,20 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
-    "header": {
-      "type": "header",
-      "settings": {
-        "text_success_headline": "Congratulations 🎉",
-        "text_success_text": "Nice one! You’ve unlocked free shipping!",
-        "free_shipping": "100",
-        "menu": "main-menu"
-      }
-    },
     "announcement_bar_ezifi7": {
       "type": "announcement_bar",
+      "blocks": {
+        "social_icons_YwDwAC": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "#",
+            "image_social_logo": "shopify://shop_images/instagram-line_d5fdb9ce-75e9-4aeb-ac50-bdbf424dcc12.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_YwDwAC"
+      ],
       "custom_css": [],
       "name": "Announcement Bar",
       "settings": {
@@ -29,6 +32,15 @@
         "image_slide_icon": "shopify://shop_images/UK_Flag.svg",
         "text_slide_text": "Free UK shipping when you spent £50",
         "text_badge_text": "Try Now"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "text_success_headline": "Congratulations 🎉",
+        "text_success_text": "Nice one! You’ve unlocked free shipping!",
+        "free_shipping": "100",
+        "menu": "main-menu"
       }
     }
   },
