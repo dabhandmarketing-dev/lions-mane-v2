@@ -78,15 +78,11 @@ customElements.define('localization-form', LocalizationForm);
                 {% for link in linklists['quick-links'].links %}    <div li-for="link in linklists['quick-links'].links" class="footer_link-list">
                                     
                   
-                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="a98119d5-19fe-ff55-a8fe-3781215e4d0c" class="footer-menu w-inline-block">
-                    <div class="clip-5 tiny-2">
-                      <div class="hover-text-6 tiny-3">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                      <div class="hover-text-6 tiny-3 bottom tiny-4">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                    </div>
+                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-link-3 w-inline-block">
+                    <div li-object="link.title">{{ link.title }}</div>
+                    <div class="icon-small-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                      </svg></div>
                   </a>
                             
                 
@@ -100,15 +96,11 @@ customElements.define('localization-form', LocalizationForm);
                 {% for link in linklists['products'].links %}    <div li-for="link in linklists['products'].links" class="footer_link-list">
                                     
                   
-                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="5b5066bc-44ac-3335-8b89-21ee0b8085f3" class="footer-menu w-inline-block">
-                    <div class="clip-5 tiny-2">
-                      <div class="hover-text-6 tiny-3">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                      <div class="hover-text-6 tiny-3 bottom tiny-4">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                    </div>
+                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-link-3 w-inline-block">
+                    <div li-object="link.title">{{ link.title }}</div>
+                    <div class="icon-small-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                      </svg></div>
                   </a>
                             
                 
@@ -120,16 +112,7 @@ customElements.define('localization-form', LocalizationForm);
 {{ section.settings.text_contact_title }}
 </div>
                 <div class="footer_link-list">
-                  <a href="{{ link.url }}" li-object:href="link.url" data-w-id="245be338-ba46-06ef-b9fd-6975332c58d4" class="footer-menu w-inline-block">
-                    <div class="clip-5 tiny-2">
-                      <div class="hover-text-6 tiny-3">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                      <div class="hover-text-6 tiny-3 bottom tiny-4">
-                        <div li-object="link.title">{{ link.title }}</div>
-                      </div>
-                    </div>
-                  </a>
+                  <a href="{{ section.settings.url_email_link }}" class="footer-link-3 w-inline-block"> <div>{{ section.settings.text_email_text }}</div> <div class="icon-small-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none"> <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path> </svg></div> </a>
                 </div>
               </div>
               <div class="footer-accordion-wrap">
@@ -332,33 +315,16 @@ customElements.define('localization-form', LocalizationForm);
               {% for link in linklists['legal'].links %}    <div li-for="link in linklists['legal'].links" class="legal-list">
                                     
                 
-                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="7b9febbf-a4f3-1eb5-6fd2-c8904434c335" class="footer-menu w-inline-block">
-                  <div class="clip-5 tiny-2">
-                    <div class="hover-text-6 tiny-3">
-                      <div li-object="link.title">{{ link.title }}</div>
-                    </div>
-                    <div class="hover-text-6 tiny-3 bottom tiny-4">
-                      <div li-object="link.title">{{ link.title }}</div>
-                    </div>
-                  </div>
+                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-link-3 w-inline-block">
+                  <div li-object="link.title">{{ link.title }}</div>
+                  <div class="icon-small-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                      <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                    </svg></div>
                 </a>
                             
               
                         </div>
 {% endfor %}
-              <div class="footer_icon-row">
-                {% for block in section.blocks %}
-    {% if block.type == "payment" %}
-                    <div li-block="Payment" class="footer_icon-item">
-                                    {% if block.settings.image_icon %}
-{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
-{% else %}
-<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
-{% endif %}
-                            </div>
-            {% endif %}
-{% endfor %}
-              </div>
             </div>
           </div>
         </div> {% schema %} {
@@ -379,17 +345,6 @@ customElements.define('localization-form', LocalizationForm);
                     "id": "image_social_logo",
                     "type": "image_picker",
                     "label": "Social Logo"
-                }
-            ]
-        },
-        {
-            "name": "Payment",
-            "type": "payment",
-            "settings": [
-                {
-                    "id": "image_icon",
-                    "type": "image_picker",
-                    "label": "Icon"
                 }
             ]
         }
@@ -423,6 +378,17 @@ customElements.define('localization-form', LocalizationForm);
             "type": "text",
             "label": "Contact Title",
             "default": "Contact"
+        },
+        {
+            "id": "url_email_link",
+            "type": "url",
+            "label": "Email Link"
+        },
+        {
+            "id": "text_email_text",
+            "type": "text",
+            "label": "Email Text",
+            "default": "hello@lionsmane.co.uk"
         }
     ],
     "presets": [
@@ -432,9 +398,6 @@ customElements.define('localization-form', LocalizationForm);
             "blocks": [
                 {
                     "type": "social-icons"
-                },
-                {
-                    "type": "payment"
                 }
             ]
         }
