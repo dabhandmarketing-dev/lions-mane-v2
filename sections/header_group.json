@@ -11,6 +11,15 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "text_success_headline": "Congratulations 🎉",
+        "text_success_text": "Nice one! You’ve unlocked free shipping!",
+        "free_shipping": "100",
+        "menu": "main-menu"
+      }
+    },
     "announcement_bar_ezifi7": {
       "type": "announcement_bar",
       "custom_css": [],
@@ -20,15 +29,6 @@
         "image_slide_icon": "shopify://shop_images/UK_Flag.svg",
         "text_slide_text": "Free UK shipping when you spent £50",
         "text_badge_text": "Try Now"
-      }
-    },
-    "header": {
-      "type": "header",
-      "settings": {
-        "text_success_headline": "Congratulations 🎉",
-        "text_success_text": "Nice one! You’ve unlocked free shipping!",
-        "free_shipping": "100",
-        "menu": "main-menu"
       }
     }
   },
