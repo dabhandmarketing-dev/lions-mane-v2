@@ -2,9 +2,9 @@
           <div class="container-large">
             <div class="card_component">
               <div id="w-node-_17c04498-1ae9-4579-d088-28802cd63649-b136f147" class="card_img-wrapper" style="{% if section.settings.left_right == 'right'%}order: 9999;{% endif %}">{% if section.settings.image_large_image %}
-{{ section.settings.image_large_image | image_url: width: 1000 | image_tag: class: 'layout6_image', sizes: '(max-width: 1060px) 100vw, 1060px', loading: 'lazy' }}
+{{ section.settings.image_large_image | image_url: width: 1000 | image_tag: class: 'layout6_image', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img class="layout6_image" src="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }}" alt="" sizes="(max-width: 1060px) 100vw, 1060px" loading="lazy" srcset="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 500w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 800w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 1060w">
+<img class="layout6_image" src="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 500w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 800w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 1060w">
 {% endif %}</div>
               <div li-content-for-blocks="" class="content_wrapper">
 {% for block in section.blocks %}
