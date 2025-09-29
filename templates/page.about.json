@@ -51,6 +51,41 @@
         "image_large_image": "shopify://shop_images/Brain_Fog.webp"
       }
     },
+    "image_with_text_left_C8jcDh": {
+      "type": "image_with_text_left",
+      "blocks": {
+        "icon_with_text_rq48DK": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/WellBeing.svg",
+            "text_icon_heading": "Boost Emotional Well-being",
+            "richtext_icon_with_text_paragraph": "<p>Lion’s Mane’s anti-inflammatory properties help balance mood, reducing brain inflammation and contributing to a stable mind.</p>"
+          }
+        },
+        "icon_with_text_zYVPCU": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/Anxiety.svg",
+            "text_icon_heading": "Reduce Anxiety",
+            "richtext_icon_with_text_paragraph": "<p>Research indicates that Lion’s Mane can improve overall mental health, making it easier to feel calm and positive throughout the day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_rq48DK",
+        "icon_with_text_zYVPCU"
+      ],
+      "name": "Image with Text (Lef",
+      "settings": {
+        "image_large_image": "shopify://shop_images/Naturally.webp",
+        "text_heading": "Feel Better. Naturally",
+        "richtext_paragraph": "<p>Lion’s Mane helps reduce anxiety and promotes a better mood. It supports emotional well-being by balancing brain chemicals and reducing inflammation, which can contribute to feelings of stress. </p>",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "url_find_out_more_link": "",
+        "text_find_out_more_text": "Find Out More"
+      }
+    },
     "1759157529a66d31cd": {
       "type": "apps",
       "blocks": {
@@ -66,6 +101,21 @@
         "okendo_reviews_widget_49GdWY"
       ],
       "settings": {}
+    },
+    "hero_v4_ixbpkt": {
+      "type": "hero_v4",
+      "settings": {
+        "text_gold_text": "LIONS MANE",
+        "text_bold_heading": "Think",
+        "text_outline_heading": "Better.",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "image_pouches": "shopify://shop_images/Lions_Mane_Hero_Floating.png",
+        "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_bottom_right": "shopify://shop_images/Shroom_Top_Left.webp"
+      }
     }
   },
   "layout": "theme",
@@ -73,6 +123,8 @@
   "order": [
     "video_section_3tPjgH",
     "image_with_text_righ_4bXVei",
-    "1759157529a66d31cd"
+    "image_with_text_left_C8jcDh",
+    "1759157529a66d31cd",
+    "hero_v4_ixbpkt"
   ]
 }
