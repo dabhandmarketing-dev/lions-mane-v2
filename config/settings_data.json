@@ -1,0 +1,16 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "favicon": "shopify://shop_images/LionsManeFavicon.png",
+    "apple_touch_icon": "shopify://shop_images/LionsManeFavicon_cce558ba-c9cc-4696-8583-8e174734083c.png",
+    "content_for_index": []
+  }
+}
