@@ -55,16 +55,16 @@
         "type": "shopify://apps/froonze-loyalty-wishlist/blocks/customer_account_page/3c495b68-652c-468d-a0ef-5bad6935d104",
         "disabled": false,
         "settings": {
-          "style": "light",
-          "dropdownMenu": "slider",
+          "style": "dark",
+          "dropdownMenu": "dropdown",
           "mobile_nav_offset_top": 0,
           "shadow": true,
           "border_radius": 4,
-          "background_color": "#ffffff",
-          "text_color": "#202202",
-          "primary_color": "#5873F9",
+          "background_color": "#202202",
+          "text_color": "#ffffff",
+          "primary_color": "#bc8c22",
           "btn_text_color": "#ffffff",
-          "max_width": 800,
+          "max_width": 1280,
           "custom_css": "",
           "account_page": ""
         }
