@@ -204,9 +204,10 @@
       ],
       "name": "Image with Text (Lef",
       "settings": {
+        "image_large_image": "shopify://shop_images/Naturally.webp",
         "text_heading": "Feel Better. Naturally",
         "richtext_paragraph": "<p>Lion’s Mane helps reduce anxiety and promotes a better mood. It supports emotional well-being by balancing brain chemicals and reducing inflammation, which can contribute to feelings of stress. </p>",
-        "url_button_link": "",
+        "url_button_link": "shopify://collections/all",
         "text_button_text": "Try Lions Mane"
       }
     },
