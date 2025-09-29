@@ -139,7 +139,8 @@
       "settings": {
         "text_top_text": "Experience a new level of",
         "text_solid_heading": "Mental",
-        "text_outline_text": "Clarity"
+        "text_outline_text": "Clarity",
+        "image_background_image": "shopify://shop_images/LighteningBG.webp"
       }
     },
     "featured_product_2": {
