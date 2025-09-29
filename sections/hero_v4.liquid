@@ -20,13 +20,11 @@
                     </div>
                   </div>
                 </div>
-                <div id="w-node-c41963d6-64ae-2f79-f3bf-632fcf0fa761-cf0fa750" class="header1_image-wrapper">
-                  <div class="home-hero-middle-element"><img data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa762" loading="lazy" alt="" src="{{ 'Header-asset_1Header-asset.webp' | asset_url }}"></div>{% if section.settings.image_pouches %}
-{{ section.settings.image_pouches | image_url: width: 1000 | image_tag: width: '256', data-w-id: 'c41963d6-64ae-2f79-f3bf-632fcf0fa763', loading: 'eager', class: 'header1_image' }}
+                <div id="w-node-c41963d6-64ae-2f79-f3bf-632fcf0fa761-cf0fa750" class="header1_image-wrapper">{% if section.settings.image_pouches %}
+{{ section.settings.image_pouches | image_url: width: 1000 | image_tag: class: 'header1_image', width: '256', sizes: '(max-width: 479px) 100vw, 256px', data-w-id: 'c41963d6-64ae-2f79-f3bf-632fcf0fa763', loading: 'eager' }}
 {% else %}
-<img width="256" data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa763" alt="" src="{{ 'Supplement-image_1Supplement-image.webp' | asset_url }}" loading="eager" class="header1_image">
-{% endif %}
-                </div>
+<img class="header1_image" src="{{ 'Lions-Mane-Hero.png' | asset_url }}" width="256" alt="" sizes="(max-width: 479px) 100vw, 256px" data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa763" loading="eager" srcset="{{ 'Lions-Mane-Hero.png' | asset_url }} 500w, {{ 'Lions-Mane-Hero.png' | asset_url }} 800w, {{ 'Lions-Mane-Hero.png' | asset_url }} 1080w, {{ 'Lions-Mane-Hero.png' | asset_url }} 1400w">
+{% endif %}</div>
               </div>
             </div>
           </div>
@@ -34,16 +32,32 @@
         <div class="home-hero-background_wrap">
           <div class="home-hero-background_overlay is-v2"></div>
           <div class="home-hero-bg-element_wrap is-top-left">
-            <div class="home-hero-top-left-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
+            <div class="home-hero-top-left-element">{% if section.settings.image_shroom_top_left %}
+{{ section.settings.image_shroom_top_left | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
+{% endif %}</div>
           </div>
           <div class="home-hero-bg-element_wrap is-bottom-left">
-            <div class="home-hero-bottom-left-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
+            <div class="home-hero-bottom-left-element">{% if section.settings.image_shroom_bottom_left %}
+{{ section.settings.image_shroom_bottom_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+{% endif %}</div>
           </div>
           <div class="home-hero-bg-element_wrap is-top-right">
-            <div class="home-hero-top-right-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
+            <div class="home-hero-top-right-element">{% if section.settings.image_shroom_top_right %}
+{{ section.settings.image_shroom_top_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+{% endif %}</div>
           </div>
           <div class="home-hero-bg-element_wrap is-bottom-right">
-            <div class="home-hero-bottom-right-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
+            <div class="home-hero-bottom-right-element">{% if section.settings.image_shroom_bottom_right %}
+{{ section.settings.image_shroom_bottom_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+{% endif %}</div>
           </div>
         </div> {% schema %} {
     "tag": "header",
@@ -77,6 +91,26 @@
             "id": "image_pouches",
             "type": "image_picker",
             "label": "Pouches"
+        },
+        {
+            "id": "image_shroom_top_left",
+            "type": "image_picker",
+            "label": "Shroom Top Left"
+        },
+        {
+            "id": "image_shroom_bottom_left",
+            "type": "image_picker",
+            "label": "Shroom Bottom Left"
+        },
+        {
+            "id": "image_shroom_top_right",
+            "type": "image_picker",
+            "label": "Shroom Top Right"
+        },
+        {
+            "id": "image_shroom_bottom_right",
+            "type": "image_picker",
+            "label": "Shroom Bottom Right"
         }
     ],
     "presets": [
