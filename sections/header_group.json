@@ -13,10 +13,11 @@
   "sections": {
     "announcement_bar_ezifi7": {
       "type": "announcement_bar",
+      "custom_css": [],
       "name": "Announcement Bar",
       "settings": {
         "url_slide_link": "shopify://products/lions-mane-gummies-2-500mg",
-        "image_slide_icon": "shopify://shop_images/Mushroom_Front.webp",
+        "image_slide_icon": "shopify://shop_images/UK_Flag.svg",
         "text_slide_text": "Free UK shipping when you spent £50",
         "text_badge_text": "Try Now"
       }
