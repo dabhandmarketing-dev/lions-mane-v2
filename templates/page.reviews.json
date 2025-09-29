@@ -9,10 +9,15 @@
  */
 {
   "sections": {
-    "default": {
-      "type": "default",
-      "disabled": true,
-      "settings": {}
+    "page_heading_aJzdkM": {
+      "type": "page_heading",
+      "name": "Page Heading",
+      "settings": {
+        "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_right": "shopify://shop_images/Shroom_Top_Left.webp"
+      }
     },
     "1759157529a66d31cd": {
       "type": "apps",
@@ -34,7 +39,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default",
+    "page_heading_aJzdkM",
     "1759157529a66d31cd"
   ]
 }
