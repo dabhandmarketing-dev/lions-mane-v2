@@ -26,40 +26,50 @@
                   </div>
                 </div>
               </div>
-              {% for link in linklists[section.settings.footer_menu].links %}    <div li-for="link in linklists[section.settings.footer_menu].links" class="footer_link-column">
+              <div class="footer_link-column">
+                <div class="text-weight-semibold">
+{{ section.settings.text_quick_links_title }}
+</div>
+                {% for link in linklists['quick-links'].links %}    <div li-for="link in linklists['quick-links'].links" class="footer_link-list">
                                     
-                
-                            <div li-object="link.title" class="text-weight-semibold">{{ link.title }}</div>
-                            
-                
-                            <div li-for:inside="child_link in link.links" class="footer_link-list">
-        {% for child_link in link.links %}                            
                   
-                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="footer_link">{{ child_link.title }}</a>
+                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="a98119d5-19fe-ff55-a8fe-3781215e4d0c" class="footer-menu w-inline-block">
+                    <div class="clip-5 tiny-2">
+                      <div class="hover-text-6 tiny-3">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                      <div class="hover-text-6 tiny-3 bottom tiny-4">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                    </div>
+                  </a>
                             
                 
-                    {% endfor %}    </div>
-                            
-              
                         </div>
 {% endfor %}
-              {% for link in linklists[section.settings.footer_menu].links %}    <div li-for="link in linklists[section.settings.footer_menu].links" class="footer_link-column">
+              </div>
+              <div class="footer_link-column">
+                <div class="text-weight-semibold">
+{{ section.settings.text_products_title }}
+</div>
+                {% for link in linklists['products'].links %}    <div li-for="link in linklists['products'].links" class="footer_link-list">
                                     
-                
-                            <div li-object="link.title" class="text-weight-semibold">{{ link.title }}</div>
-                            
-                
-                            <div li-for:inside="child_link in link.links" class="footer_link-list">
-        {% for child_link in link.links %}                            
                   
-                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="footer_link">{{ child_link.title }}</a>
+                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-menu w-inline-block">
+                    <div class="clip-5 tiny-2">
+                      <div class="hover-text-6 tiny-3">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                      <div class="hover-text-6 tiny-3 bottom tiny-4">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                    </div>
+                  </a>
                             
                 
-                    {% endfor %}    </div>
-                            
-              
                         </div>
 {% endfor %}
+              </div>
               <div data-w-id="4195bd97-0229-ceb0-3acd-536c5c30cd2c" class="footer-info-wrapper">
                 <div class="footer-links-title-wrap">
                   <h4 class="footer-links-title">Contact</h4>
@@ -381,6 +391,18 @@ customElements.define('localization-form', LocalizationForm);
             "type": "richtext",
             "label": "Footer Slogan",
             "default": "<p>Think Better. Feel Better. <strong>Do Better. <\/strong><\/p>"
+        },
+        {
+            "id": "text_quick_links_title",
+            "type": "text",
+            "label": "Quick Links Title",
+            "default": "Pages"
+        },
+        {
+            "id": "text_products_title",
+            "type": "text",
+            "label": "Products Title",
+            "default": "Products"
         }
     ],
     "presets": [

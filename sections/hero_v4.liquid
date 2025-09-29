@@ -31,34 +31,26 @@
         </div>
         <div class="home-hero-background_wrap">
           <div class="home-hero-background_overlay is-v2"></div>
-          <div class="home-hero-bg-element_wrap is-top-left">
-            <div class="home-hero-top-left-element">{% if section.settings.image_shroom_top_left %}
-{{ section.settings.image_shroom_top_left | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+          <div class="home-hero-bg-element_wrap is-top-left">{% if section.settings.image_shroom_top_left %}
+{{ section.settings.image_shroom_top_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'home-hero-top-left-element' }}
 {% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="home-hero-top-left-element">
 {% endif %}</div>
-          </div>
-          <div class="home-hero-bg-element_wrap is-bottom-left">
-            <div class="home-hero-bottom-left-element">{% if section.settings.image_shroom_bottom_left %}
-{{ section.settings.image_shroom_bottom_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+          <div class="home-hero-bg-element_wrap is-bottom-left">{% if section.settings.image_shroom_bottom_left %}
+{{ section.settings.image_shroom_bottom_left | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'home-hero-bottom-left-element' }}
 {% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="home-hero-bottom-left-element">
 {% endif %}</div>
-          </div>
-          <div class="home-hero-bg-element_wrap is-top-right">
-            <div class="home-hero-top-right-element">{% if section.settings.image_shroom_top_right %}
-{{ section.settings.image_shroom_top_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+          <div class="home-hero-bg-element_wrap is-top-right">{% if section.settings.image_shroom_top_right %}
+{{ section.settings.image_shroom_top_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'home-hero-top-right-element' }}
 {% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="home-hero-top-right-element">
 {% endif %}</div>
-          </div>
-          <div class="home-hero-bg-element_wrap is-bottom-right">
-            <div class="home-hero-bottom-right-element">{% if section.settings.image_shroom_bottom_right %}
-{{ section.settings.image_shroom_bottom_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'shroom' }}
+          <div class="home-hero-bg-element_wrap is-bottom-right">{% if section.settings.image_shroom_bottom_right %}
+{{ section.settings.image_shroom_bottom_right | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'home-hero-bottom-right-element' }}
 {% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="shroom">
+<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" class="home-hero-bottom-right-element">
 {% endif %}</div>
-          </div>
         </div> {% schema %} {
     "tag": "header",
     "name": "Hero V4",
