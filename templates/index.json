@@ -145,22 +145,6 @@
         "text_headline": "Description"
       }
     },
-    "17591549495080fe92": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_XEgPQH": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_XEgPQH"
-      ],
-      "settings": {}
-    },
     "image_with_text_6dpMxL": {
       "type": "image_with_text",
       "blocks": {
@@ -185,6 +169,22 @@
         "image_position": "left"
       }
     },
+    "17591549495080fe92": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_XEgPQH": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_XEgPQH"
+      ],
+      "settings": {}
+    },
     "call_to_action": {
       "type": "call_to_action",
       "settings": {
@@ -204,8 +204,8 @@
     "product_selection",
     "video_section",
     "featured_product_2",
-    "17591549495080fe92",
     "image_with_text_6dpMxL",
+    "17591549495080fe92",
     "call_to_action"
   ]
 }
