@@ -13,64 +13,13 @@
             <div class="container-large-4">
               <div class="padding-section-large no-top-padding">
                 <div>
-                  <div bind="f2d2f2a9-8a99-b8b7-6436-c8c0caa0991b" class="global-style w-embed">
-                    <style>
-.card_glow_background {
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
-}
- /*
-.card_glow_background._1 {
-}
-.card_glow_background._2 {
-  left: calc(-100% - 24px);
-}
-.card_glow_background._3 {
-  left: calc(-100% - 36px);
-}
-.card_glow_background._4 {
-  top: calc(-100% - 24px);
-}
-.card_glow_background._5 {
-  top: calc(-100% - 24px);
-  left: calc(-100% - 24px);
-}
-.card_glow_background._6 {
-  top: calc(-100% - 24px);
-  left: calc(-100% - 36px);
-}
-*/
-.card_glow_background._1 {
- top: calc(-25% - 24px);
-}
-.card_glow_background._2 {
-top: calc(-25% - 24px);
-left: calc(-50% - 12px);
-}
-.card_glow_background._3 {
- top: calc(-25% - 24px);
- left: calc(-100% - 24px);
-}
-.card_glow_background._4 {
- top: calc(-75% - 24px);
-}
-.card_glow_background._5 {
-top: calc(-75% - 24px);
-left: calc(-50% - 12px);
-}
-.card_glow_background._6 {
-  top: calc(-75% - 24px);
-  left: calc(-100% - 36px);
-}
-</style>
-                  </div>
                   <div class="w-layout-grid grid_card">
                     {% for block in section.blocks %}
     {% if block.type == "usp-block" %}
-                    <div li-block="USP Block" id="w-node-d33873de-e6cf-91f2-d673-500b77c0672d-77c0671f" data-w-id="d33873de-e6cf-91f2-d673-500b77c0672d" class="glow-card">
+                    <div li-block="USP Block" id="w-node-d33873de-e6cf-91f2-d673-500b77c0672d-77c0671f" class="glow-card">
                                     
                       
-                                    <a href="{{ block.settings.url_link }}" class="card_border_glow w-inline-block"> <div id="w-node-d33873de-e6cf-91f2-d673-500b77c0672f-77c0671f" class="card-hover"> <div class="margin-bottom margin-medium"> <div class="layout245-icon_wrap">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 52 | image_tag: loading: 'lazy', class: 'icon-1x1-medium-2' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'icon-1x1-medium-2' }} {% endif %}</div> </div> <div class="margin-bottom margin-small"> <h3 class="heading-style-h4-2">{{ block.settings.text_heading }}</h3> </div> <p class="text-size-regular-2">{{ block.settings.text_text }}</p> <div class="_1rem-spacer-2"></div> <div class="morecontainer"> <p class="text-size-regular-2">{{ block.settings.text_button_text }}</p><img loading="lazy" src="{{ 'Right-arrow.svg' | asset_url }}" alt="" class="arrow-icon"> </div> </div> <div class="card_glow_background _1"></div> </a>
+                                    <a data-w-id="d33873de-e6cf-91f2-d673-500b77c0672e" href="{{ block.settings.url_link }}" class="card_border_glow w-inline-block"> <div id="w-node-d33873de-e6cf-91f2-d673-500b77c0672f-77c0671f" class="card-hover"> <div class="margin-bottom margin-medium"> <div class="layout245-icon_wrap">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 52 | image_tag: loading: 'lazy', class: 'icon-1x1-medium-2' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'icon-1x1-medium-2' }} {% endif %}</div> </div> <div class="margin-bottom margin-small"> <h3 class="heading-style-h4-2">{{ block.settings.text_heading }}</h3> </div> <p class="text-size-regular-2">{{ block.settings.text_text }}</p> <div class="_1rem-spacer-2"></div> <div class="morecontainer"> <p class="text-size-regular-2">{{ block.settings.text_button_text }}</p><img loading="lazy" src="{{ 'Right-arrow.svg' | asset_url }}" alt="" class="arrow-icon"> </div> </div> <div class="card_glow_background _1"></div> <div class="gold-glow"></div> </a>
                                     
                     
                             </div>
