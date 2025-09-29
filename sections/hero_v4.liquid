@@ -21,11 +21,7 @@
                   </div>
                 </div>
                 <div id="w-node-c41963d6-64ae-2f79-f3bf-632fcf0fa761-cf0fa750" class="header1_image-wrapper">
-                  <div class="home-hero-middle-element">{% if section.settings.image_mushroom_front %}
-{{ section.settings.image_mushroom_front | image_url: width: 1000 | image_tag: data-w-id: 'c41963d6-64ae-2f79-f3bf-632fcf0fa762', loading: 'lazy' }}
-{% else %}
-<img data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa762" alt="" src="{{ 'Header-asset_1Header-asset.webp' | asset_url }}" loading="lazy">
-{% endif %}</div>{% if section.settings.image_pouches %}
+                  <div class="home-hero-middle-element"><img data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa762" loading="lazy" alt="" src="{{ 'Header-asset_1Header-asset.webp' | asset_url }}"></div>{% if section.settings.image_pouches %}
 {{ section.settings.image_pouches | image_url: width: 1000 | image_tag: width: '256', data-w-id: 'c41963d6-64ae-2f79-f3bf-632fcf0fa763', loading: 'eager', class: 'header1_image' }}
 {% else %}
 <img width="256" data-w-id="c41963d6-64ae-2f79-f3bf-632fcf0fa763" alt="" src="{{ 'Supplement-image_1Supplement-image.webp' | asset_url }}" loading="eager" class="header1_image">
@@ -42,32 +38,16 @@
 {% endif %}
           <div class="home-hero-background_overlay is-v2"></div>
           <div class="home-hero-bg-element_wrap is-top-left">
-            <div class="home-hero-top-left-element">{% if section.settings.image_mushroom_top_left %}
-{{ section.settings.image_mushroom_top_left | image_url: width: 1000 | image_tag: loading: 'lazy' }}
-{% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
-{% endif %}</div>
+            <div class="home-hero-top-left-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
           </div>
           <div class="home-hero-bg-element_wrap is-bottom-left">
-            <div class="home-hero-bottom-left-element">{% if section.settings.image_mushroom_bottom_left %}
-{{ section.settings.image_mushroom_bottom_left | image_url: width: 1000 | image_tag: loading: 'lazy' }}
-{% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
-{% endif %}</div>
+            <div class="home-hero-bottom-left-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
           </div>
           <div class="home-hero-bg-element_wrap is-top-right">
-            <div class="home-hero-top-right-element">{% if section.settings.image_mushroom_top_right %}
-{{ section.settings.image_mushroom_top_right | image_url: width: 1000 | image_tag: loading: 'lazy' }}
-{% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
-{% endif %}</div>
+            <div class="home-hero-top-right-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
           </div>
           <div class="home-hero-bg-element_wrap is-bottom-right">
-            <div class="home-hero-bottom-right-element">{% if section.settings.image_mushroom_back_right %}
-{{ section.settings.image_mushroom_back_right | image_url: width: 1000 | image_tag: loading: 'lazy' }}
-{% else %}
-<img loading="lazy" alt="" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}">
-{% endif %}</div>
+            <div class="home-hero-bottom-right-element"><img loading="lazy" src="{{ 'Header-asset-blurred_1Header-asset-blurred.webp' | asset_url }}" alt=""></div>
           </div>
         </div> {% schema %} {
     "tag": "header",
@@ -98,11 +78,6 @@
             "default": "Try Lions Mane"
         },
         {
-            "id": "image_mushroom_front",
-            "type": "image_picker",
-            "label": "Mushroom Front"
-        },
-        {
             "id": "image_pouches",
             "type": "image_picker",
             "label": "Pouches"
@@ -111,26 +86,6 @@
             "id": "image_lion_bg",
             "type": "image_picker",
             "label": "Lion BG"
-        },
-        {
-            "id": "image_mushroom_top_left",
-            "type": "image_picker",
-            "label": "Mushroom Top Left"
-        },
-        {
-            "id": "image_mushroom_bottom_left",
-            "type": "image_picker",
-            "label": "Mushroom Bottom Left"
-        },
-        {
-            "id": "image_mushroom_top_right",
-            "type": "image_picker",
-            "label": "Mushroom Top Right"
-        },
-        {
-            "id": "image_mushroom_back_right",
-            "type": "image_picker",
-            "label": "Mushroom Back Right"
         }
     ],
     "presets": [
