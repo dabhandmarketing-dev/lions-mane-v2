@@ -9,18 +9,13 @@
  */
 {
   "sections": {
-    "page_heading_aJzdkM": {
-      "type": "page_heading",
-      "name": "Page Heading",
+    "video_section_3tPjgH": {
+      "type": "video_section",
       "settings": {
-        "text_pre_heading": "What on earth is",
-        "text_heading": "",
-        "text_outline": "Lions",
-        "text_heading_2": "Mane?",
-        "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
-        "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
-        "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
-        "image_shroom_right": "shopify://shop_images/Shroom_Top_Left.webp"
+        "text_top_text": "What on earth is",
+        "text_solid_heading": "Lions",
+        "text_outline_text": "Mane?",
+        "image_background_image": "shopify://shop_images/LighteningBG.webp"
       }
     },
     "image_with_text_righ_4bXVei": {
@@ -76,7 +71,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "page_heading_aJzdkM",
+    "video_section_3tPjgH",
     "image_with_text_righ_4bXVei",
     "1759157529a66d31cd"
   ]
