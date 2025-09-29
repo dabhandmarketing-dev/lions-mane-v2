@@ -1,4 +1,5 @@
-<div class="padding-global padding-section-small">
+<div class="footer-gold"></div>
+        <div class="padding-global padding-section-small">
           <div class="container-large">
             <div class="footer-all-links-flex">
               <div class="footer3_left-wrapper">
@@ -7,9 +8,7 @@
 {% else %}
 <img loading="lazy" alt="" src="{{ 'Mobile-Logo_1Mobile-Logo.webp' | asset_url }}" class="navbar2_logo is-desktop">
 {% endif %}</a>
-                <div class="margin-bottom margin-small max-350px">
-                  <div class="text-size-regular-2"> {{ section.settings.richtext_footer_slogan }} </div>
-                </div>
+                <div class="text-size-regular-2"> {{ section.settings.richtext_footer_slogan }} </div>
                 <div class="social-media-link-wrap">
                   <div bind="c66b9c39-a1f4-d2fe-191e-d628d63d46c4" class="w-layout-grid social-grid">
                     {% for block in section.blocks %}
@@ -24,7 +23,53 @@
             {% endif %}
 {% endfor %}
                   </div>
-                </div>
+                </div>{% if localization.available_languages.size > 1 %}    <localization-form li-if="localization.available_languages.size > 1" class="li-lang_wrapper">
+    
+                  {% form 'localization', class: 'li-lang_form' %}
+<div data-hover="true" data-delay="500" class="li-lang_dropdown w-dropdown">
+                      <div lang="{{ localization.language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
+                        <div li-object="localization.language.endonym_name | capitalize">{{ localization.language.endonym_name | capitalize }}</div>
+                        {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="li-lang_dd-toggle-icon w-embed">
+    <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                          </svg>    </div>
+{% endif %}
+                      </div>
+                      <nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
+        {% for language in localization.available_languages %}                            
+                        
+                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
+    
+                          <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
+                            </div>
+{% endunless %}
+                            
+                      
+                    {% endfor %}    </nav>
+                    </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
+                  {% endform %}
+                  <div class="li-lang_script w-embed w-script">
+                    <script>
+class LocalizationForm extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
+    this.querySelectorAll('a').forEach(item =>
+      item.addEventListener('click', this.onItemClick.bind(this))
+    );
+  }
+  onItemClick(event) {
+    event.preventDefault();
+    const form = this.querySelector('form');
+    this.input.value = event.currentTarget.dataset.value;
+    if (form) form.submit();
+  }
+}
+customElements.define('localization-form', LocalizationForm);
+</script>
+                  </div>
+                    </localization-form>
+{% endif %}
               </div>
               <div class="footer_link-column">
                 <div class="text-weight-semibold">
@@ -55,7 +100,7 @@
                 {% for link in linklists['products'].links %}    <div li-for="link in linklists['products'].links" class="footer_link-list">
                                     
                   
-                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-menu w-inline-block">
+                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="5b5066bc-44ac-3335-8b89-21ee0b8085f3" class="footer-menu w-inline-block">
                     <div class="clip-5 tiny-2">
                       <div class="hover-text-6 tiny-3">
                         <div li-object="link.title">{{ link.title }}</div>
@@ -70,17 +115,21 @@
                         </div>
 {% endfor %}
               </div>
-              <div data-w-id="4195bd97-0229-ceb0-3acd-536c5c30cd2c" class="footer-info-wrapper">
-                <div class="footer-links-title-wrap">
-                  <h4 class="footer-links-title">Contact</h4>
-                </div>
-                <div class="footer-info-contant">
-                  <div class="single-footer-info-wrap">
-                    <div class="footer-info">Email : hello@ozempure.com</div>
-                  </div>
-                  <div class="single-footer-info-wrap">
-                    <div class="footer-info">5 Back West Crescent, Lytham St. Annes, England, FY8 1SQ<br></div>
-                  </div>
+              <div class="footer_link-column">
+                <div class="text-weight-semibold">
+{{ section.settings.text_contact_title }}
+</div>
+                <div class="footer_link-list">
+                  <a href="{{ link.url }}" li-object:href="link.url" data-w-id="245be338-ba46-06ef-b9fd-6975332c58d4" class="footer-menu w-inline-block">
+                    <div class="clip-5 tiny-2">
+                      <div class="hover-text-6 tiny-3">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                      <div class="hover-text-6 tiny-3 bottom tiny-4">
+                        <div li-object="link.title">{{ link.title }}</div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="footer-accordion-wrap">
@@ -277,11 +326,30 @@
         <div class="padding-global padding-section-small">
           <div class="container-large">
             <div class="footer_sub-footer">
-              <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="footer_logo-link w-inline-block">
-                <div class="footer_icon-row">
-                  {% for block in section.blocks %}
-    {% if block.type == "shipping" %}
-                    <div li-block="Shipping" class="footer_icon-item">
+              <div class="footer-menu w-embed w-script">Copyright © 
+                <script>document.write(new Date().getFullYear());</script> Lions Mane UK
+              </div>
+              {% for link in linklists['legal'].links %}    <div li-for="link in linklists['legal'].links" class="legal-list">
+                                    
+                
+                            <a href="{{ link.url }}" li-object:href="link.url" data-w-id="7b9febbf-a4f3-1eb5-6fd2-c8904434c335" class="footer-menu w-inline-block">
+                  <div class="clip-5 tiny-2">
+                    <div class="hover-text-6 tiny-3">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
+                    <div class="hover-text-6 tiny-3 bottom tiny-4">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
+                  </div>
+                </a>
+                            
+              
+                        </div>
+{% endfor %}
+              <div class="footer_icon-row">
+                {% for block in section.blocks %}
+    {% if block.type == "payment" %}
+                    <div li-block="Payment" class="footer_icon-item">
                                     {% if block.settings.image_icon %}
 {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
 {% else %}
@@ -290,61 +358,7 @@
                             </div>
             {% endif %}
 {% endfor %}
-                </div>
-              </a>
-              <div li-for:inside="link in linklists['footer'].links" id="w-node-_5eccf730-c887-5204-0e0c-693f99a732d3-99a7328f" class="footer_legal-links">
-        {% for link in linklists['footer'].links %}                            
-                
-                            <a li-object="link.title" li-object:href="link.url" href="{{ link.url }}" class="footer_legal-link">{{ link.title }}</a>
-                            
-              
-                    {% endfor %}    </div>{% if localization.available_languages.size > 1 %}    <localization-form li-if="localization.available_languages.size > 1" class="li-lang_wrapper">
-    
-                {% form 'localization', class: 'li-lang_form' %}
-<div data-hover="true" data-delay="500" class="li-lang_dropdown w-dropdown">
-                    <div lang="{{ localization.language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
-                      <div li-object="localization.language.endonym_name | capitalize">{{ localization.language.endonym_name | capitalize }}</div>
-                      {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="li-lang_dd-toggle-icon w-embed">
-    <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                        </svg>    </div>
-{% endif %}
-                    </div>
-                    <nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
-        {% for language in localization.available_languages %}                            
-                      
-                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
-    
-                        <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
-                          </div>
-{% endunless %}
-                            
-                    
-                    {% endfor %}    </nav>
-                  </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
-                {% endform %}
-                <div class="li-lang_script w-embed w-script">
-                  <script>
-class LocalizationForm extends HTMLElement {
-  constructor() {
-    super();
-    this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
-    this.querySelectorAll('a').forEach(item =>
-      item.addEventListener('click', this.onItemClick.bind(this))
-    );
-  }
-  onItemClick(event) {
-    event.preventDefault();
-    const form = this.querySelector('form');
-    this.input.value = event.currentTarget.dataset.value;
-    if (form) form.submit();
-  }
-}
-customElements.define('localization-form', LocalizationForm);
-</script>
-                </div>
-                  </localization-form>
-{% endif %}
+              </div>
             </div>
           </div>
         </div> {% schema %} {
@@ -369,8 +383,8 @@ customElements.define('localization-form', LocalizationForm);
             ]
         },
         {
-            "name": "Shipping",
-            "type": "shipping",
+            "name": "Payment",
+            "type": "payment",
             "settings": [
                 {
                     "id": "image_icon",
@@ -403,6 +417,12 @@ customElements.define('localization-form', LocalizationForm);
             "type": "text",
             "label": "Products Title",
             "default": "Products"
+        },
+        {
+            "id": "text_contact_title",
+            "type": "text",
+            "label": "Contact Title",
+            "default": "Contact"
         }
     ],
     "presets": [
@@ -414,7 +434,7 @@ customElements.define('localization-form', LocalizationForm);
                     "type": "social-icons"
                 },
                 {
-                    "type": "shipping"
+                    "type": "payment"
                 }
             ]
         }
