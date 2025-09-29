@@ -274,6 +274,65 @@
         "url_button_link": "shopify://collections/all",
         "text_button_text": "Try Lions Mane"
       }
+    },
+    "accordions_Hzc4WG": {
+      "type": "accordions",
+      "blocks": {
+        "faq_WgDehb": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "What is Lion’s Mane?",
+            "richtext_faq_answer": "<p>Lion’s Mane (Hericium erinaceus) is a medicinal mushroom that has been used in traditional Chinese and Japanese medicine for centuries. </p><p>-</p><p>Its unique, shaggy appearance resembles a lion’s mane, hence the name. It is highly valued for its potential to support cognitive function, boost the immune system, and promote overall health and well-being through its bioactive compounds.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_V7qzc4": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "How does Lion’s Mane improve cognitive function?",
+            "richtext_faq_answer": "<p>Lion’s Mane enhances cognitive function by promoting the synthesis of nerve growth factor (NGF), a protein crucial for the growth, maintenance, and survival of neurons. NGF facilitates neurogenesis, the process by which new neurons are formed in the brain. </p><p>-</p><p>This leads to improved memory, focus, and mental clarity. Scientific studies have demonstrated that Lion’s Mane can significantly enhance cognitive performance and may protect against age-related cognitive decline</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_Ptjp8G": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "Can Lion’s Mane help reduce anxiety and depression?",
+            "richtext_faq_answer": "<p>Yes, Lion’s Mane has shown potential in reducing anxiety and depression. It works by modulating the levels of neurotransmitters like serotonin and dopamine, which play a crucial role in mood regulation. </p><p>-</p><p>Additionally, its anti-inflammatory properties help reduce inflammation in the brain, which is linked to mood disorders. Clinical trials have indicated that regular consumption of Lion’s Mane can lead to noticeable improvements in symptoms of anxiety and depression.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_age848": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "Is Lion’s Mane safe to consume daily?",
+            "richtext_faq_answer": "<p>Yes, Lion’s Mane is generally considered safe for daily consumption. It is non-toxic and has been used as both food and medicine for centuries. </p><p>-</p><p>However, as with any supplement, it is advisable to consult with a healthcare professional before adding it to your daily routine, especially if you have any pre-existing medical conditions or are taking other medications. This ensures personalized and safe usage.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        },
+        "faq_xydbLY": {
+          "type": "faq",
+          "settings": {
+            "text_faq_title": "How does Lion’s Mane support the immune system?",
+            "richtext_faq_answer": "<p>Lion’s Mane supports the immune system through its high content of polysaccharides, particularly beta-glucans, which enhance the activity of macrophages, natural killer (NK) cells, and other components of the immune system. </p><p>-</p><p>These compounds stimulate the production and activation of immune cells, enhancing the body’s ability to fight off pathogens. Studies have shown that Lion’s Mane can improve immune responses and may provide protection against infections.</p>",
+            "url_find_out_more_link": "",
+            "text_find_out_more_text": "Find Out More"
+          }
+        }
+      },
+      "block_order": [
+        "faq_WgDehb",
+        "faq_V7qzc4",
+        "faq_Ptjp8G",
+        "faq_age848",
+        "faq_xydbLY"
+      ],
+      "name": "Accordions",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -289,6 +348,7 @@
     "image_with_text_left_TMTi9P",
     "image_with_text_righ_y79fyp",
     "17591549495080fe92",
-    "call_to_action"
+    "call_to_action",
+    "accordions_Hzc4WG"
   ]
 }
