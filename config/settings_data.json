@@ -72,11 +72,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".nav_container {background-color: transparent; transition: background-color 0.3s ease;}",
-      ".nav_logo-link {width: 12rem; transition: width 0.3s ease;}",
-      "@media (min-scroll-height: 2%) {.nav_container {background-color: #121212; } .nav_logo-link {width: 10rem; }}",
-      "@media (max-scroll-height: 0%) {.nav_container {background-color: transparent; } .nav_logo-link {width: 12rem; }}"
-    ]
+    "custom_css": []
   }
 }
