@@ -3838,8 +3838,8 @@ figcaption {
 }
 
 .section.usps {
-  color: var(--base-color-neutral--black);
-  background-color: #fff;
+  background-color: var(--base-color-neutral--neutral-darker);
+  color: var(--base-color-neutral--white);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -7170,7 +7170,7 @@ figcaption {
 }
 
 .uui-button-link-3:hover {
-  color: #53389e;
+  color: var(--base-color-neutral--white);
 }
 
 .uui-icon-1x1-xsmall-3 {
@@ -7575,20 +7575,22 @@ figcaption {
   }
 
   .nav_menu {
+    background-color: var(--base-color-neutral--black);
     -webkit-text-fill-color: inherit;
-    background-color: #0000;
     background-clip: border-box;
     border-bottom: 1px solid #000;
-    padding: 1rem 5% 2rem;
-    position: absolute;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    inset: 0%;
     overflow: auto;
   }
 
   .nav_menu.is-page-height-tablet {
-    border-bottom-color: var(--base-color-neutral--neutral-lightest);
-    background-color: var(--base-color-neutral--white);
+    background-color: var(--base-color-neutral--black);
     width: 100%;
-    max-height: 90vh;
+    height: 100vh;
     padding-bottom: 3.9rem;
     padding-right: 5%;
     transition: height .5s;
