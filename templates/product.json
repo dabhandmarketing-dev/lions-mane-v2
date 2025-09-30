@@ -167,6 +167,23 @@
         "text_outline_text": "Clarity",
         "image_background_image": "shopify://shop_images/LighteningBG.webp"
       }
+    },
+    "app_block_VwTGAD": {
+      "type": "app_block",
+      "blocks": {
+        "okendo_reviews_widget_qQWr4D": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_qQWr4D"
+      ],
+      "name": "App Block",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -175,6 +192,7 @@
     "product_hero",
     "usp_section_PhUQtH",
     "product_grid_home_R8LWDD",
-    "video_section_K73kh6"
+    "video_section_K73kh6",
+    "app_block_VwTGAD"
   ]
 }
