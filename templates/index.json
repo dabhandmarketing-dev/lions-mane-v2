@@ -123,11 +123,14 @@
         "text_bottom_text": "Do Better. Feel Better. Think Better."
       }
     },
-    "product_selection": {
-      "type": "product_selection",
+    "product_grid_home_fGzK9r": {
+      "type": "product_grid_home",
+      "name": "Product Grid Home",
       "settings": {
         "text_subheading": "Think Better. Do Better. Feel Better",
         "text_large_heading": "TRY Lions Mane",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6,
         "text_button_text": "Add To Cart",
         "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
         "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
@@ -384,7 +387,7 @@
     "hero_v4",
     "trust_icons",
     "usp_section",
-    "product_selection",
+    "product_grid_home_fGzK9r",
     "video_section",
     "app_block_h4GFfH",
     "featured_product_2",
