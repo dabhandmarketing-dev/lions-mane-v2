@@ -4,12 +4,7 @@
               <div class="uui-max-width-large-7">
                 <div class="uui-blogpost04_header">
                   <div class="uui-button-row-7">
-                    <a data-w-id="c2f9a5bf-be88-5ba4-2410-6cb11419c0e0" href="#" class="uui-button-link-3 w-inline-block">
-                      <div bind="1fdb76c1-a0b3-9981-7c38-a04f53242335" class="uui-button-icon-8 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.8332 10.0003H4.1665M4.1665 10.0003L9.99984 15.8337M4.1665 10.0003L9.99984 4.16699" stroke="CurrentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                      <div>All posts</div>
-                    </a>
+                    <a data-w-id="c2f9a5bf-be88-5ba4-2410-6cb11419c0e0" href="{{ section.settings.url_all_posts_link }}" class="uui-button-link-3 w-inline-block"> <div bind="1fdb76c1-a0b3-9981-7c38-a04f53242335" class="uui-button-icon-8 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.8332 10.0003H4.1665M4.1665 10.0003L9.99984 15.8337M4.1665 10.0003L9.99984 4.16699" stroke="CurrentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path> </svg></div> <div>All posts</div> </a>
                   </div>
                   <div class="_2rem-spacer"></div>
                   <div class="uui-blogpost04_title-wrapper">
@@ -102,6 +97,11 @@
     "name": "Blog Post 2",
     "class": "uui-section_blogpost04",
     "settings": [
+        {
+            "id": "url_all_posts_link",
+            "type": "url",
+            "label": "All Posts Link"
+        },
         {
             "id": "image_author_image",
             "type": "image_picker",
