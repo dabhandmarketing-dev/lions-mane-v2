@@ -55,7 +55,7 @@
         "type": "shopify://apps/froonze-loyalty-wishlist/blocks/customer_account_page/3c495b68-652c-468d-a0ef-5bad6935d104",
         "disabled": false,
         "settings": {
-          "style": "light",
+          "style": "dark",
           "dropdownMenu": "dropdown",
           "mobile_nav_offset_top": 0,
           "shadow": true,
