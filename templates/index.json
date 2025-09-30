@@ -27,16 +27,44 @@
     "trust_icons": {
       "type": "trust_icons",
       "blocks": {
+        "trust_icons_LEwwpr": {
+          "type": "trust-icons",
+          "name": "Trust Icons",
+          "settings": {
+            "image_image": "shopify://shop_images/Star_Icon_685a0702-64c5-4a1d-a49a-72737f6ae97d.svg",
+            "richtext_richtext": "<p><strong>4.9/5</strong> Star Reviews</p>"
+          }
+        },
+        "trust_icons_zpRAHH": {
+          "type": "trust-icons",
+          "name": "Trust Icons",
+          "settings": {
+            "image_image": "shopify://shop_images/Delivery.svg",
+            "richtext_richtext": "<p><strong>Free UK Delivery</strong> Over £50</p>"
+          }
+        },
         "trust-icons": {
           "type": "trust-icons",
           "name": "Trust Icons",
           "settings": {
-            "richtext_richtext": "<p><strong>4.9/5</strong> Star Reviews</p>"
+            "image_image": "shopify://shop_images/Third_Party_Tested.svg",
+            "richtext_richtext": "<p><strong>Third Party Tested</strong></p>"
+          }
+        },
+        "trust_icons_g9Cxq6": {
+          "type": "trust-icons",
+          "name": "Trust Icons",
+          "settings": {
+            "image_image": "shopify://shop_images/Natural_Science.svg",
+            "richtext_richtext": "<p><strong>100% Natural Science</strong></p>"
           }
         }
       },
       "block_order": [
-        "trust-icons"
+        "trust_icons_LEwwpr",
+        "trust_icons_zpRAHH",
+        "trust-icons",
+        "trust_icons_g9Cxq6"
       ],
       "settings": {}
     },
