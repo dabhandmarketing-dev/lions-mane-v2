@@ -27,6 +27,11 @@
                         </div>
                       </a>
                       <div class="spacer-small"></div>
+                      <div class="mini-cart_line-item_quantity">
+                        <a x-on:click="quantity--" href="#" class="mini-cart_line-item_quantity-adjust xl">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust xl" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                        <a x-on:click="quantity++" href="#" class="mini-cart_line-item_quantity-adjust xl">+</a>
+                      </div>
+                      <div class="spacer-small"></div>
                       <div class="margin-top-auto">
                         <div class="product-item_form-wrapper">
                           {% if product.available == true %}    <div li-if="product.available == true">
