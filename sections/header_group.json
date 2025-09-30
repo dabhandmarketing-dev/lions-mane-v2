@@ -39,7 +39,7 @@
       "settings": {
         "text_success_headline": "Congratulations 🎉",
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
-        "free_shipping": "100",
+        "free_shipping": "10000",
         "menu": "main-menu"
       }
     }
