@@ -12,7 +12,10 @@
     "blog_post_2_BqG7Y3": {
       "type": "blog_post_2",
       "name": "Blog Post 2",
-      "settings": {}
+      "settings": {
+        "image_author_image": "shopify://shop_images/LionsManeFavicon_cce558ba-c9cc-4696-8583-8e174734083c.png",
+        "text_author_text": "Lions Mane Team"
+      }
     },
     "related_articles": {
       "type": "related_articles",
