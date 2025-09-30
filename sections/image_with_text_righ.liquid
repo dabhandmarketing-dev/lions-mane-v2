@@ -43,9 +43,9 @@
                 </div>
               </div>
               <div id="w-node-_37e58400-949b-eaf0-53cf-905425f88a8a-25f88a86" data-w-id="37e58400-949b-eaf0-53cf-905425f88a8a" class="card_img-wrapper">{% if section.settings.image_large_image %}
-{{ section.settings.image_large_image | image_url: width: 1000 | image_tag: class: 'layout6_image', sizes: '100vw', loading: 'lazy' }}
+{{ section.settings.image_large_image | image_url: width: 1000 | image_tag: class: 'layout6_image', sizes: '(max-width: 1060px) 100vw, 1060px', loading: 'lazy' }}
 {% else %}
-<img class="layout6_image" src="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 500w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 800w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 1060w">
+<img class="layout6_image" src="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }}" alt="" sizes="(max-width: 1060px) 100vw, 1060px" loading="lazy" srcset="{{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 500w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 800w, {{ 'Placeholder-Image_1Placeholder-Image.webp' | asset_url }} 1060w">
 {% endif %}</div>
             </div>
           </div>

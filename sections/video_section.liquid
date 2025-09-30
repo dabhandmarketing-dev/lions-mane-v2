@@ -22,9 +22,9 @@
 <img data-w-id="1df109a5-2673-b007-2eed-18b3e2d96bf5" alt="" src="https://uploads-ssl.webflow.com/66762a278b3e636bb85f4c56/66762a278b3e636bb85f4c62_Header%20asset.png" loading="eager" class="header26_image">
 {% endif %}</div>
           <div class="header26-background_wrap">{% if section.settings.image_background_image %}
-{{ section.settings.image_background_image | image_url: width: 1000 | image_tag: class: 'header26-background-image', sizes: '100vw', loading: 'lazy' }}
+{{ section.settings.image_background_image | image_url: width: 1000 | image_tag: class: 'header26-background-image', sizes: '(max-width: 1439px) 100vw, 1440px', loading: 'lazy' }}
 {% else %}
-<img class="header26-background-image" src="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 500w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 800w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1080w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1440w">
+<img class="header26-background-image" src="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }}" alt="" sizes="(max-width: 1439px) 100vw, 1440px" loading="lazy" srcset="{{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 500w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 800w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1080w, {{ 'Header-26-Background-image_1Header-26-Background-image.webp' | asset_url }} 1440w">
 {% endif %}
             <div class="header26-background-overlay"></div>
           </div>

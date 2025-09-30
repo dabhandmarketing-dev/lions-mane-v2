@@ -147,7 +147,7 @@
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper">
         
                           <div class="mini-cart_line-item_quantity">
-                            <a x-on:click="quantity--" href="#" class="mini-cart_line-item_quantity-adjust xl">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust xl" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                            <a x-on:click="quantity--" href="#" class="mini-cart_line-item_quantity-adjust xl">-</a><input li-element="add-to-cart-quantity" class="mini-cart_line-item_quantity-adjust xl" value="1" x-model="quantity">
                             <a x-on:click="quantity++" href="#" class="mini-cart_line-item_quantity-adjust xl">+</a>
                           </div>
                           <div class="button-group-2">
