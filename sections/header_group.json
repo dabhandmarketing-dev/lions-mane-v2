@@ -37,6 +37,8 @@
     "header": {
       "type": "header",
       "settings": {
+        "image_logo": "shopify://shop_images/Logo_1Logo.webp",
+        "image_mobile_logo": "shopify://shop_images/Lions_Mane_Left.webp",
         "text_success_headline": "Congratulations 🎉",
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
         "free_shipping": "10000",
