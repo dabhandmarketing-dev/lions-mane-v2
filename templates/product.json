@@ -12,12 +12,6 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "name": "Vendor",
-          "settings": {},
-          "blocks": {}
-        },
         "product-name": {
           "type": "product-name",
           "name": "Product Name",
@@ -52,7 +46,6 @@
         }
       },
       "block_order": [
-        "vendor",
         "product-name",
         "product-price",
         "availability",
