@@ -8,7 +8,11 @@
                       <div class="login-title">
 {{ section.settings.text_login }}
 </div>
-                      <div li-object="form.errors | default_errors" class="text-size-regular text-align-center">{{ form.errors | default_errors }}</div>
+                      <div class="text-size-regular text-align-center">Login to your account to access your points and past orders. <br><span>
+{{ section.settings.text_no_account_yet }}
+</span>
+                        <a href="{{ routes.account_register_url }}" li-object:href="routes.account_register_url" class="text-style-link text-weight-bold">Register now</a>
+                      </div>
                       {% form 'customer_login', return_to: '/account', class: 'form_form' %}
 {% if form.errors %}    <div li-if="form.errors" class="form_error-message">
     
@@ -44,7 +48,12 @@
 {{ section.settings.text_password_text }}
 </p>
                       {% form 'recover_customer_password', class: 'form_form' %}
-<div class="form_field-wrapper"><label for="field-4" class="form_hidden-label">Email Address</label><input class="form_input w-input" maxlength="256" name="email" data-name="Field 4" placeholder="Email Address" type="email" id="field-4"></div><input type="submit" data-wait="Please wait..." class="button max-width-full w-button" value="Reset">
+<div class="form_field-wrapper"><label for="field-4" class="form_hidden-label">Email Address</label>
+                          <div class="formicon"><input class="input-field icon w-input" maxlength="256" name="customer[email]" data-name="Email" placeholder="Email" type="text" id="Email" required=""><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="field-icon-3">
+                              <path d="M4 21V17C4 15.8954 4.89543 15 6 15H18C19.1046 15 20 15.8954 20 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" app="ikonik" class="path-g29kx"></path>
+                              <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" app="ikonik" class="circle-a52b2"></circle>
+                            </svg></div>
+                        </div><input type="submit" data-wait="Please wait..." class="login-button w-button" value="Reset">
                       {% endform %}
                       <div class="w-form-done">
                         <div>Thank you! Your submission has been received!</div>
