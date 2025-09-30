@@ -65,7 +65,7 @@
           "primary_color": "#bc8c22",
           "btn_text_color": "#ffffff",
           "max_width": 1280,
-          "custom_css": ".frcp-nav {\n  box-shadow: none !important;\n}\n\n.frcp-card {\n  box-shadow: none !important;\n  background-color: white !important;\n  color: white !important;\n}\n\n.frcp-profile-card {\n  color: black !important;\n}\n\n@media only screen and (min-width: 768px) {\n  .frcp-nav-button[active=true] {\n    color: var(--frcp-textColor) !important;\n    background: #BC8C22 !important;\n  }\n}\n\n.frcp-nav-button__count {\n  background-color: #BC8C22 !important;\n  color: black !important;\n}\n\n.frcp-btn {\n  box-shadow: none !important;\n}",
+          "custom_css": ".frcp-nav {\n  box-shadow: none !important;\n}\n\n.frcp-card {\n  box-shadow: none !important;\n  background-color: white !important;\n  color: white !important;\n}\n\n.frcp-profile-card, .frcp-address, .frcp-new-address, .frcp-new-address__content-wrapper {\n  color: black !important;\n}\n\n@media only screen and (min-width: 768px) {\n  .frcp-nav-button[active=true] {\n    color: var(--frcp-textColor) !important;\n    background: #BC8C22 !important;\n  }\n}\n\n.frcp-nav-button__count {\n  background-color: #BC8C22 !important;\n  color: black !important;\n}\n\n.frcp-btn {\n  box-shadow: none !important;\n}\n\n.frcp-form .vue-tel-input .vti__input {\n  background: #111111 !important;\n}\n\n.frcp-app .frcp-form__label {\n  color: white !important;\n}",
           "account_page": ""
         }
       }
