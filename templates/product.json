@@ -75,12 +75,96 @@
         "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
         "image_shroom_bottom_right": "shopify://shop_images/Shroom_Top_Left.webp"
       }
+    },
+    "usp_section_PhUQtH": {
+      "type": "usp_section",
+      "blocks": {
+        "usp_block_VPrfp3": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/Focus.svg",
+            "text_heading": "Think Better",
+            "text_text": "Lion’s Mane boosts cognitive function by promoting nerve growth factor (NGF) production, enhancing memory, focus, and mental clarity.",
+            "text_button_text": "Find Out More"
+          }
+        },
+        "usp_block_4UtiJi": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/Neuroprotective.svg",
+            "text_heading": "Neuroprotective",
+            "text_text": "Lion’s Mane offers neuroprotective benefits, helping to protect brain cells from damage and regenerate new cells",
+            "text_button_text": "Find Out More"
+          }
+        },
+        "usp_block_mAJ8Yn": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/Antioxidants.svg",
+            "text_heading": "Antioxidants",
+            "text_text": "Packed with antioxidants and polysaccharides, Lion’s Mane strengthens the immune system, enhancing the body’s natural shield.",
+            "text_button_text": "Find Out More"
+          }
+        },
+        "usp_block_6eVxwW": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/Anti-Inflammatory.svg",
+            "text_heading": "Anti-inflammatory",
+            "text_text": "This mushroom has anti-inflammatory properties, helping to reduce inflammation and alleviate symptoms of chronic inflammatory conditions.",
+            "text_button_text": "Find Out More"
+          }
+        },
+        "usp_block_RTJw4d": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/DigestionAid.svg",
+            "text_heading": "Digestion Aid",
+            "text_text": "Lion’s Mane supports digestive health by promoting beneficial gut bacteria growth and improving nutrient absorption and digestion.",
+            "text_button_text": "Find Out More"
+          }
+        },
+        "usp_block_irKdMn": {
+          "type": "usp-block",
+          "name": "USP Block",
+          "settings": {
+            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "image_image": "shopify://shop_images/FeelBetter.svg",
+            "text_heading": "Feel Better",
+            "text_text": "Lion’s Mane can help improve mood, reducing anxiety and depression symptoms by supporting brain health and reducing inflammation.",
+            "text_button_text": "Find Out More"
+          }
+        }
+      },
+      "block_order": [
+        "usp_block_VPrfp3",
+        "usp_block_4UtiJi",
+        "usp_block_mAJ8Yn",
+        "usp_block_6eVxwW",
+        "usp_block_RTJw4d",
+        "usp_block_irKdMn"
+      ],
+      "settings": {
+        "text_top_text": "Think Better. Feel Better. Do Better.",
+        "text_bottom_text": "Do Better. Feel Better. Think Better."
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero",
+    "usp_section_PhUQtH",
     "product_grid_home_R8LWDD"
   ]
 }
