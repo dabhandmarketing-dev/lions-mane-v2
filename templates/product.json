@@ -168,6 +168,74 @@
         "image_background_image": "shopify://shop_images/LighteningBG.webp"
       }
     },
+    "image_with_text_righ_7tTFfj": {
+      "type": "image_with_text_righ",
+      "blocks": {
+        "icon_with_text_NGj89x": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/BrainHealth.svg",
+            "text_icon_heading": "Support Brain Health",
+            "richtext_icon_with_text_paragraph": "<p>Studies show Lion’s Mane improves cognitive function and memory, helping you stay focused and clear-headed.</p>"
+          }
+        },
+        "icon_with_text_LgFHzK": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/Brain_Fog.svg",
+            "text_icon_heading": "Reduce Brain Fog",
+            "richtext_icon_with_text_paragraph": "<p>Lion’s Mane reduces brain fog and promotes mental clarity, making it easier to think clearly and stay focused throughout the day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_NGj89x",
+        "icon_with_text_LgFHzK"
+      ],
+      "name": "Image with Text (Rig",
+      "settings": {
+        "text_heading": "Brain Fog. Be Gone",
+        "richtext_paragraph": "<p>Lion’s Mane reduces brain fog, promoting mental clarity and sharpness. It supports brain health by enhancing nerve growth factor (NGF) production, crucial for neuron maintenance and regeneration. </p>",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "image_large_image": "shopify://shop_images/Brain_Fog.webp"
+      }
+    },
+    "image_with_text_left_BEhwng": {
+      "type": "image_with_text_left",
+      "blocks": {
+        "icon_with_text_Uq7iqb": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/WellBeing.svg",
+            "text_icon_heading": "Boost Emotional Well-being",
+            "richtext_icon_with_text_paragraph": "<p>Lion’s Mane’s anti-inflammatory properties help balance mood, reducing brain inflammation and contributing to a stable mind.</p>"
+          }
+        },
+        "icon_with_text_Lrzwhj": {
+          "type": "icon-with-text",
+          "settings": {
+            "image_icon": "shopify://shop_images/Anxiety.svg",
+            "text_icon_heading": "Reduce Anxiety",
+            "richtext_icon_with_text_paragraph": "<p>Research indicates that Lion’s Mane can improve overall mental health, making it easier to feel calm and positive throughout the day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_Uq7iqb",
+        "icon_with_text_Lrzwhj"
+      ],
+      "name": "Image with Text (Lef",
+      "settings": {
+        "image_large_image": "shopify://shop_images/Naturally.webp",
+        "text_heading": "Feel Better. Naturally",
+        "richtext_paragraph": "<p>Lion’s Mane helps reduce anxiety and promotes a better mood. It supports emotional well-being by balancing brain chemicals and reducing inflammation, which can contribute to feelings of stress. </p>",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "url_find_out_more_link": "",
+        "text_find_out_more_text": "Find Out More"
+      }
+    },
     "app_block_VwTGAD": {
       "type": "app_block",
       "blocks": {
@@ -208,6 +276,8 @@
     "usp_section_PhUQtH",
     "product_grid_home_R8LWDD",
     "video_section_K73kh6",
+    "image_with_text_righ_7tTFfj",
+    "image_with_text_left_BEhwng",
     "app_block_VwTGAD",
     "hero_v4_x7gwq6"
   ]
