@@ -27,6 +27,10 @@
 {{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar2_logo is-desktop' }}
 {% else %}
 <img loading="lazy" alt="" src="{{ 'Logo_1Logo.webp' | asset_url }}" class="navbar2_logo is-desktop">
+{% endif %}{% if section.settings.image_mobile_logo %}
+{{ section.settings.image_mobile_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar2_logo is-mobile' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'Mobile-Logo_1Mobile-Logo.webp' | asset_url }}" class="navbar2_logo is-mobile">
 {% endif %}</a>
             <div class="split-contant navbar-right">
               <div class="nav_shop-icons">
@@ -635,6 +639,11 @@ a {
             "id": "image_logo",
             "type": "image_picker",
             "label": "Logo"
+        },
+        {
+            "id": "image_mobile_logo",
+            "type": "image_picker",
+            "label": "Mobile Logo"
         },
         {
             "id": "text_success_headline",
