@@ -40,7 +40,7 @@
           "name": "Trust Icons",
           "settings": {
             "image_image": "shopify://shop_images/Delivery.svg",
-            "richtext_richtext": "<p><strong>Free UK Delivery</strong> Over £50</p>"
+            "richtext_richtext": "<p><strong>Free Delivery</strong> Over £50</p>"
           }
         },
         "trust-icons": {
