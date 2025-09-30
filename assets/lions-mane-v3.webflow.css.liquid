@@ -680,7 +680,6 @@ figcaption {
 }
 
 .text-style-link.text-weight-bold {
-  color: var(--base-color-neutral--white);
   font-weight: 500;
 }
 
@@ -692,6 +691,10 @@ figcaption {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
+}
+
+.heading-style-h2.centre {
+  text-align: center;
 }
 
 .page-wrapper {
@@ -747,7 +750,6 @@ figcaption {
 }
 
 .button {
-  border: 1px solid var(--base-color-neutral--black);
   background-color: var(--base-color-neutral--black);
   color: var(--text-color--text-alternate);
   text-align: center;
@@ -1424,8 +1426,8 @@ figcaption {
 }
 
 .login_tab-link {
-  background-color: var(--base-color-neutral--neutral-darkest);
-  color: var(--base-color-neutral--neutral-lightest);
+  background-color: var(--base-color-neutral--white);
+  color: var(--base-color-neutral--neutral-dark);
   text-align: center;
   flex: 1;
   width: 100%;
@@ -3443,6 +3445,10 @@ figcaption {
   padding: 0 !important;
   position: absolute !important;
   overflow: hidden !important;
+}
+
+.login_tab-pane {
+  color: var(--base-color-neutral--black);
 }
 
 .login_tab-content {
@@ -6698,6 +6704,10 @@ figcaption {
   inset: 0% 0% auto;
 }
 
+.section_login4 {
+  background-image: linear-gradient(180deg, var(--base-color-neutral--neutral-darker), var(--base-color-neutral--black));
+}
+
 .text-size-medium-2 {
   font-size: 1.125rem;
 }
@@ -6757,13 +6767,12 @@ figcaption {
 }
 
 .login4_form-wrapper {
-  border: 2px solid var(--base-color-brand--gold-left);
-  background-color: var(--\<unknown\|relume-variable-color-scheme-1-foreground\>);
+  background-color: var(--base-color-neutral--white);
   width: 100%;
   max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem;
+  padding: 2.5rem 2rem;
   overflow: hidden;
 }
 
@@ -6863,6 +6872,148 @@ figcaption {
   align-items: center;
   padding: 1rem;
   display: flex;
+}
+
+.google-login {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  text-align: center;
+  background-color: #3cba54;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.google-login.is-secondary {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  background-color: var(--\<unknown\|relume-variable-transparent\>);
+  color: var(--\<unknown\|relume-variable-neutral-shade-7\>);
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.login-button {
+  background-color: var(--base-color-neutral--black);
+  color: var(--text-color--text-alternate);
+  text-align: center;
+  white-space: nowrap;
+  min-height: 60px;
+  padding: .65rem 1.5rem;
+  font-weight: 400;
+}
+
+.login-button.is-secondary {
+  border: 1px solid var(--base-color-neutral--black);
+  background-color: #0000;
+}
+
+.login-button.is-secondary.max-width-full.pointer-events-off {
+  border-color: var(--base-color-neutral--neutral-lighter);
+}
+
+.login-button.is-outline {
+  color: #111;
+  background-color: #0000;
+  border: 1px solid #111;
+  transition: color .2s, background-color .2s;
+}
+
+.login-button.is-outline:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.login-button.max-width-full {
+  background-image: linear-gradient(90deg, var(--base-color-brand--gold-left), var(--base-color-brand--gold-middle) 50%, var(--base-color-brand--gold-right));
+  color: var(--base-color-neutral--black);
+}
+
+.login-button.is-link {
+  color: var(--base-color-neutral--black);
+  background-color: #0000;
+  border-style: none;
+  padding: .25rem 0;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.login-button.is-icon {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.login-button.is-small {
+  padding: .5rem 1.25rem;
+}
+
+.login-button.is-large {
+  padding: 1rem 2rem;
+}
+
+.login-button.is-text {
+  color: #000;
+  background-color: #0000;
+  border: 2px solid #0000;
+}
+
+.login-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.formicon {
+  position: relative;
+}
+
+.input-field {
+  border: 1px solid #d1d5db;
+  min-height: 60px;
+  margin-bottom: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 32px;
+  transition: border-color .3s;
+}
+
+.input-field:focus {
+  border-width: 2px;
+  border-color: #77bdef;
+}
+
+.input-field.icon {
+  padding-left: 3rem;
+}
+
+.field-icon-3 {
+  z-index: 1;
+  color: var(--base-color-brand--gold-left);
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  position: absolute;
+  inset: 10px auto 0 6px;
+}
+
+.ikonik-6wth3, .ikonik-aj5ll, .ikonik-j2rl7, .ikonik-rljmv {
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
@@ -7753,6 +7904,10 @@ figcaption {
   .login4_component {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .login-button.is-link.hide-tablet {
+    display: none;
   }
 }
 
@@ -9258,6 +9413,10 @@ figcaption {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .login-button.is-secondary.is-icon {
+    padding: .5rem;
+  }
 }
 
 #w-node-_4cac5d72-c96b-80f4-6ca7-c7c5adc06798-adc06793 {
@@ -9436,7 +9595,7 @@ figcaption {
   justify-self: start;
 }
 
-#w-node-e0a78f50-4953-419e-36e6-c883c51fb15d-b136f156, #w-node-_25c5a7f2-ec55-1600-3ab2-bb8c6f33dc52-b136f156, #w-node-_5f0a3baf-3d28-cfc9-549d-3fe758caddc9-b136f156, #w-node-_1d1d17bf-2e21-df39-c443-254a2bf2ee73-b136f156, #w-node-_4f755843-a123-e491-771d-63437893e6e9-b136f156, #w-node-_669be5d0-0379-8e66-0456-b1157a5c3d61-b136f156, #w-node-_61ca83da-ed6f-b20e-b358-002173a1358c-b136f159, #w-node-_60c71cba-7638-e0e1-a8b2-1800f388b9af-b136f159, #w-node-_60c71cba-7638-e0e1-a8b2-1800f388b9b3-b136f159, #w-node-_60c71cba-7638-e0e1-a8b2-1800f388b9b7-b136f159, #w-node-_2b0ff4fd-be32-dbab-7e65-a1d7cd0306b4-b136f159 {
+#w-node-e0a78f50-4953-419e-36e6-c883c51fb15d-b136f156, #w-node-_25c5a7f2-ec55-1600-3ab2-bb8c6f33dc52-b136f156, #w-node-_5f0a3baf-3d28-cfc9-549d-3fe758caddc9-b136f156, #w-node-_1d1d17bf-2e21-df39-c443-254a2bf2ee73-b136f156, #w-node-_4f755843-a123-e491-771d-63437893e6e9-b136f156, #w-node-_669be5d0-0379-8e66-0456-b1157a5c3d61-b136f156, #w-node-_61ca83da-ed6f-b20e-b358-002173a1358c-b136f159, #w-node-_60c71cba-7638-e0e1-a8b2-1800f388b9af-b136f159 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -9473,16 +9632,16 @@ figcaption {
   align-self: center;
 }
 
-#w-node-_020413c5-8dec-2c46-93a1-274ba44a608a-a44a6088 {
+#w-node-_7d898926-9988-2b7f-8593-82fc10278323-b136f160 {
   grid-area: span 1 / span 1 / span 1 / span 1;
   place-self: center;
 }
 
-#w-node-_020413c5-8dec-2c46-93a1-274ba44a608b-a44a6088 {
+#w-node-_7d898926-9988-2b7f-8593-82fc10278324-b136f160 {
   align-self: center;
 }
 
-#w-node-_020413c5-8dec-2c46-93a1-274ba44a60ab-a44a6088, #w-node-_020413c5-8dec-2c46-93a1-274ba44a60b6-a44a6088, #w-node-_020413c5-8dec-2c46-93a1-274ba44a60b7-a44a6088, #w-node-_2208b0d9-2806-4a47-a514-cc4f139cfd1f-139cfd0c, #w-node-_63614b06-d13c-4caa-b5ce-a7c7ab35668a-ab35667c, #w-node-b90266f4-7b7e-d3a3-be54-12662ea8929f-b136f164 {
+#w-node-_7d898926-9988-2b7f-8593-82fc10278344-b136f160, #w-node-_7d898926-9988-2b7f-8593-82fc10278351-b136f160, #w-node-_7d898926-9988-2b7f-8593-82fc10278352-b136f160, #w-node-c8fe9b7b-9e4b-ad53-b471-c6d6a56503d4-b136f160, #w-node-c8fe9b7b-9e4b-ad53-b471-c6d6a56503f9-b136f160, #w-node-_2208b0d9-2806-4a47-a514-cc4f139cfd1f-139cfd0c, #w-node-_63614b06-d13c-4caa-b5ce-a7c7ab35668a-ab35667c, #w-node-b90266f4-7b7e-d3a3-be54-12662ea8929f-b136f164 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -9593,11 +9752,11 @@ figcaption {
     grid-column: span 1 / span 1;
   }
 
-  #w-node-_020413c5-8dec-2c46-93a1-274ba44a608a-a44a6088 {
+  #w-node-_7d898926-9988-2b7f-8593-82fc10278323-b136f160 {
     align-self: start;
   }
 
-  #w-node-_020413c5-8dec-2c46-93a1-274ba44a60b6-a44a6088, #w-node-_020413c5-8dec-2c46-93a1-274ba44a60b7-a44a6088 {
+  #w-node-_7d898926-9988-2b7f-8593-82fc10278351-b136f160, #w-node-_7d898926-9988-2b7f-8593-82fc10278352-b136f160 {
     order: -9999;
   }
 
