@@ -184,6 +184,21 @@
       ],
       "name": "App Block",
       "settings": {}
+    },
+    "hero_v4_x7gwq6": {
+      "type": "hero_v4",
+      "settings": {
+        "text_gold_text": "LIONS MANE",
+        "text_bold_heading": "Think",
+        "text_outline_heading": "Better.",
+        "url_button_link": "shopify://collections/all",
+        "text_button_text": "Try Lions Mane",
+        "image_pouches": "shopify://shop_images/Lions_Mane_Hero_Floating.png",
+        "image_shroom_top_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_bottom_left": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_top_right": "shopify://shop_images/Shroom_Top_Left.webp",
+        "image_shroom_bottom_right": "shopify://shop_images/Shroom_Top_Left.webp"
+      }
     }
   },
   "layout": "theme",
@@ -193,6 +208,7 @@
     "usp_section_PhUQtH",
     "product_grid_home_R8LWDD",
     "video_section_K73kh6",
-    "app_block_VwTGAD"
+    "app_block_VwTGAD",
+    "hero_v4_x7gwq6"
   ]
 }
