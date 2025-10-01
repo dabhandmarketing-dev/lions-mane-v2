@@ -119,7 +119,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "shopify://blogs/benefits/lion-s-mane-improving-mood-by-reducing-anxiety-and-depression",
+            "url_link": "",
             "image_image": "shopify://shop_images/DigestionAid.svg",
             "text_heading": "Digestion Aid",
             "text_text": "Lion’s Mane supports digestive health by promoting beneficial gut bacteria growth and improving nutrient absorption and digestion.",
@@ -130,7 +130,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "url_link": "shopify://blogs/benefits/lion-s-mane-improving-mood-by-reducing-anxiety-and-depression",
             "image_image": "shopify://shop_images/FeelBetter.svg",
             "text_heading": "Feel Better",
             "text_text": "Lion’s Mane can help improve mood, reducing anxiety and depression symptoms by supporting brain health and reducing inflammation.",
