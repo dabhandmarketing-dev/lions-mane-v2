@@ -7763,25 +7763,29 @@ figcaption {
 
   .nav_component {
     min-height: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .nav_container {
+    z-index: 9999;
     grid-column-gap: 0rem;
     grid-template-columns: 1fr min-content min-content;
   }
 
   .nav_logo-link {
+    z-index: 2;
     width: 10rem;
   }
 
   .nav_menu {
+    z-index: 1;
     background-color: var(--base-color-neutral--black);
     -webkit-text-fill-color: inherit;
     background-clip: border-box;
     border-bottom: 1px solid #000;
     height: 100vh;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
+    padding: 8rem 1.5rem 2rem;
     position: fixed;
     inset: 0%;
     overflow: auto;
@@ -7805,6 +7809,10 @@ figcaption {
     height: auto;
     font-size: 1.125rem;
     font-weight: 700;
+  }
+
+  .nav_menu-button {
+    z-index: 2;
   }
 
   .nav_menu-button.w--open {
@@ -8172,8 +8180,10 @@ figcaption {
   }
 
   .split-contant.navbar-right {
+    z-index: 2;
     grid-column-gap: 1.1rem;
     grid-row-gap: 1.1rem;
+    position: relative;
   }
 
   .navbar {
