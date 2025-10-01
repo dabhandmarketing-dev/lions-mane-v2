@@ -175,9 +175,20 @@
         "image_background_image": "shopify://shop_images/LighteningBG.webp"
       }
     },
-    "apps_white_8p8NmH": {
-      "type": "apps_white",
-      "name": "Apps (White)",
+    "175934117156889e8e": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_MrAMDW": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_MrAMDW"
+      ],
       "settings": {}
     },
     "featured_product_2": {
@@ -405,7 +416,7 @@
     "usp_section",
     "product_grid_home_fGzK9r",
     "video_section",
-    "apps_white_8p8NmH",
+    "175934117156889e8e",
     "featured_product_2",
     "image_with_text_righ_9HqnpH",
     "image_with_text_left_TMTi9P",
