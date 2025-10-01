@@ -189,6 +189,11 @@
       "block_order": [
         "okendo_reviews_widget_MrAMDW"
       ],
+      "custom_css": [
+        ".oke-w-main {color: white;}",
+        ".oke-w-review-side {background: #121212;}",
+        ".oke-w-reviewer-verified {color: #FFCF2B;}"
+      ],
       "settings": {}
     },
     "featured_product_2": {
