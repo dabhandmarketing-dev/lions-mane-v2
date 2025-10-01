@@ -75,7 +75,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "url_link": "shopify://blogs/benefits/lion-s-mane-and-ngf-how-this-mushroom-boosts-cognitive-function-memory-focus-and-mental-clarity",
             "image_image": "shopify://shop_images/Focus.svg",
             "text_heading": "Think Better",
             "text_text": "Lion’s Mane boosts cognitive function by promoting nerve growth factor (NGF) production, enhancing memory, focus, and mental clarity.",
@@ -86,7 +86,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "url_link": "shopify://blogs/benefits/lion-s-mane-s-neuroprotective-benefits-protecting-and-regenerating-brain-cells-for-optimal-brain-health",
             "image_image": "shopify://shop_images/Neuroprotective.svg",
             "text_heading": "Neuroprotective",
             "text_text": "Lion’s Mane offers neuroprotective benefits, helping to protect brain cells from damage and regenerate new cells",
@@ -97,7 +97,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "url_link": "",
             "image_image": "shopify://shop_images/Antioxidants.svg",
             "text_heading": "Antioxidants",
             "text_text": "Packed with antioxidants and polysaccharides, Lion’s Mane strengthens the immune system, enhancing the body’s natural shield.",
@@ -108,7 +108,7 @@
           "type": "usp-block",
           "name": "USP Block",
           "settings": {
-            "url_link": "/blogs/benefits/lions-mane-and-ngf",
+            "url_link": "shopify://blogs/benefits/lion-s-mane-utilising-anti-inflammatory-properties-to-reduce-inflammation",
             "image_image": "shopify://shop_images/Anti-Inflammatory.svg",
             "text_heading": "Anti-inflammatory",
             "text_text": "This mushroom has anti-inflammatory properties, helping to reduce inflammation and alleviate symptoms of chronic inflammatory conditions.",
