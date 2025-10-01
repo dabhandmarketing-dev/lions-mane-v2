@@ -7,7 +7,7 @@
                 {% for article in blog.articles %}    <div li-for="article in blog.articles" role="listitem" class="blog_cms-item w-dyn-item">
                                     
                   
-                            <a li-object:href="article.url" href="{{ article.url }}" class="blog-card w-inline-block">
+                            <a li-object:href="article.url" data-w-id="c45bff24-6242-fee4-5061-f2f14b06a7bd" href="{{ article.url }}" class="blog-card w-inline-block">
                     <div class="blog-image"><img li-object:src="article.image | image_url: width: 450" li-object:alt="article.image.alt" alt="{{ article.image.alt }}" src="{{ article.image | image_url: width: 450 }}" loading="lazy" class="image-cover">
                       <div class="blog-badge">
                         <div>#lionsmane</div>
@@ -18,12 +18,19 @@
                     </div>
                     <div class="blog-detail">
                       <div class="button-link">
-                        <div class="icon-link">
-                          <div bind="9e5d8c6f-b7b9-bd29-c15b-b15671681282" class="icon-x-small w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.47233 8.66657H10.919L7.66566 11.9199C7.40566 12.1799 7.40566 12.6066 7.66566 12.8666C7.92566 13.1266 8.34566 13.1266 8.60566 12.8666L12.999 8.47323C13.259 8.21323 13.259 7.79323 12.999 7.53323L8.61233 3.13323C8.35233 2.87323 7.93233 2.87323 7.67233 3.13323C7.41233 3.39323 7.41233 3.81323 7.67233 4.07323L10.919 7.33323H3.47233C3.10566 7.33323 2.80566 7.63323 2.80566 7.9999C2.80566 8.36657 3.10566 8.66657 3.47233 8.66657Z" fill="currentColor"></path>
-                            </svg></div>
-                        </div>
                         <div>Read more</div>
+                        <div class="btn-icon-circle-2">
+                          <div class="btn-icon-wrapper">
+                            <div class="btn-icon-arrow hover w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                              </svg></div>
+                            <div class="btn-icon-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                              </svg></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </a>
