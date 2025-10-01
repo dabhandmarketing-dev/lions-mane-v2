@@ -20,18 +20,10 @@
             "url_link": "#",
             "image_social_logo": "shopify://shop_images/instagram-line.svg"
           }
-        },
-        "social_icons_gxFcPc": {
-          "type": "social-icons",
-          "settings": {
-            "url_link": "#",
-            "image_social_logo": "shopify://shop_images/instagram-line.svg"
-          }
         }
       },
       "block_order": [
-        "social_icons_HD3tmW",
-        "social_icons_gxFcPc"
+        "social_icons_HD3tmW"
       ],
       "settings": {
         "image_footer_logo": "shopify://shop_images/Lions_Mane_Left.webp",
