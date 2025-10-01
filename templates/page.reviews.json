@@ -37,6 +37,12 @@
       "block_order": [
         "okendo_reviews_widget_49GdWY"
       ],
+      "custom_css": [
+        ".oke-w-main {color: white;}",
+        ".oke-w-review-side {background: #121212;}",
+        ".oke-w-reviewer-verified {color: #ffcf2b;}",
+        ".oke-w-header-content-block {color: white;}"
+      ],
       "settings": {}
     }
   },
