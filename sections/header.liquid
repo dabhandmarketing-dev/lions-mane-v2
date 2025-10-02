@@ -430,6 +430,192 @@
                     <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')"><img loading="lazy" src="{{ 'CartIcon2.svg' | asset_url }}" alt="" class="cart-icon">
                       <div li-element="mini-cart-item-count" class="cart_count" x-data="{ items: 0 }" x-text="items" @carttotalitems.window="items = event.detail">1</div>
                     </div>
+                    <nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list" :class="open || 'mini-cart-closed'">
+                      <div li-element="dropdown-toggle" class="nav_mini-cart-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
+                      <div class="mini-cart_component">
+                        <div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }">
+                          <div class="mini-cart_header">
+                            <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                              <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                                </svg></div>
+                            </button>
+                          </div>
+                          <div class="li-component_wrapper">
+                            <div x-data="{ freeShipping: {{ section.settings.free_shipping }} }" class="mini-cart_footer-2">
+                              <div x-bind:style="'display: ' + (((freeShipping - total.price) / 100) < 0 ? 'none' : 'block')" class="mini-cart_footer_progress-component">
+                                <div class="mini-cart_footer_progress-bar">
+                                  <div x-bind:style="'width: ' + (total_price/freeShipping) *100 + '%'" class="mini-cart_footer_progress-bar-innner"></div>
+                                </div>
+                                <div class="text-size-small">Only <span li-js-price="freeShipping - total_price" x-text="LiquifyHelper.moneyFormat(freeShipping - total_price, true, '{{ shop.money_with_currency_format }}')">$52.75</span> more and then your shipping is free!</div>
+                              </div>
+                              <div x-bind:style="'display: ' + (((freeShipping - total_price) / 100) < 0 ? 'block' : 'none')" class="mini-cart_footer_progress-component">
+                                <div class="heading-style-h4-4">
+{{ section.settings.text_success_headline }}
+</div>
+                                <div class="spacer-tiny-2"></div>
+                                <div class="text-size-small">
+{{ section.settings.text_success_text }}
+</div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          <div class="mini-cart_line-item no-scrollbar">
+                            <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
+                              <template x-for="product in products" :key="product.key">
+    <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img src="../images/product-apparel-2.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image">
+                                <div class="mini-cart_line-item_product-info">
+                                  <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
+                                  <div class="mini-cart_line-item_price">
+                                    <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                    <template x-if="product.price < product.original_price">
+            <div li-js-if="product.price < product.original_price">
+        
+                                      <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                            </div>
+    </template>
+                                  </div>
+                                  <div class="mini-cart_line-item_quantity">
+                                    <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                                    <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
+                                  </div>
+                                  <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
+                                </div>
+                              </li></template>
+                            </ul>
+                          </div>
+                          <div class="mini-cart_footer">
+                            <div class="mini-cart_footer-total">
+                              <div class="text-size-regular text-weight-bold">Subtotal</div>
+                              <div class="mini-cart_footer-price">
+                                <div li-js-price="total.price" class="text-size-regular text-weight-bold" x-text="LiquifyHelper.moneyFormat(total.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                <template x-if="total.price < original_total_price">
+            <div li-js-if="total.price < original_total_price" class="mini-cart_conditional">
+        
+                                  <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(original_total_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                        </div>
+    </template>
+                              </div>
+                            </div>
+                            <div li-element="mini-cart-api-response" class="mini-cart_footer-message hide">
+                              <div class="mini-cart_footer-message-item">
+                                <div class="text-size-regular text-weight-bold">Message</div>
+                                <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
+                              </div>
+                            </div>
+                            <a x-bind:href="'/checkout'" href="https://lionsmanenootropic.myshopify.com/cart/add?id[]=48706333049112&quantity[]=1" class="button2 is-v2 w-inline-block">
+                              <div class="button5_inner is-v2">
+                                <div class="button2_text">Checkout</div>
+                                <div class="button2_icon-wrap"><img loading="lazy" src="{{ 'button2-arrow.svg' | asset_url }}" alt="" class="button2_icon"></div>
+                              </div>
+                              <div class="button5_gradient is-v2"></div>
+                              <div bind="90e0e776-af58-4836-0cc8-837fb6f002e5" class="custom-styles hide w-embed">
+                                <style>
+	html {
+		font-size: 16px;
+	}
+	h1, .heading-style-h1 {
+		font-size: 2.01em;
+	}
+	h2, .heading-style-h2 {
+		font-size: 1.75em;
+	}
+	h3, .heading-style-h3 {
+		font-size: 1.52em;
+	}
+	h4, .heading-style-h4 {
+		font-size: 1.32em;
+	}
+	h5, .heading-style-h5 {
+		font-size: 1.15em;
+	}
+	@media (min-width: 478px) {
+		html {
+			font-size: calc(16px + 0 * ((100vw - 478px) / 514));
+		}
+	}
+	@media (min-width: 992px) {
+		html {
+			font-size: 16px;
+		}
+		h1, .heading-style-h1 {
+			font-size: 3.71em;
+		}
+		h2, .heading-style-h2 {
+			font-size: 2.86em;
+		}
+		h3, .heading-style-h3 {
+			font-size: 2.2em;
+		}
+		h4, .heading-style-h4 {
+			font-size: 1.69em;
+		}
+		h5, .heading-style-h5 {
+			font-size: 1.3em;
+		}
+	}
+	@media (min-width: 1440px) {
+		html {
+			font-size: calc(16px + 2 * ((100vw - 1440px) / 480));
+		}
+	}
+	@media (min-width: 1920px) {
+		html {
+			font-size: 18px;
+		}
+	}
+a {
+	color: white;
+  text-decoration: none;
+}	
+.button2 .button2_icon-wrap {
+	left: calc(100% - 0.5em);
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon-wrap {
+	left: 0.5em;
+  transform: translateX(0);
+  background: rgba(255,255,255,0);
+}
+.button2 .button2_text {
+	position:relative;
+	left:0;
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_text {
+	left:3.5em;
+}
+.button2 .button2_icon {
+	filter: invert(0%);
+  transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.button2:hover .button2_icon {
+	filter: invert(100%);
+}
+</style>
+                              </div>
+                            </a>
+                            <div class="price-securepayment_wrap"><img loading="lazy" src="{{ 'Padlock-icon.svg' | asset_url }}" alt="" class="price-padlock-icon">
+                              <div class="text-size-regular-5 text-weight-bold">Secure payment</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
+                          <div class="mini-cart_header">
+                            <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                              <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                                </svg></div>
+                            </button>
+                          </div>
+                          <div class="mini-cart_empty-content">
+                            <div class="text-size-regular">No Products selected</div>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
                   </div>
                 </div>
               </div>
@@ -458,6 +644,28 @@
             "id": "image_mobile_logo",
             "type": "image_picker",
             "label": "Mobile Logo"
+        },
+        {
+            "id": "text_success_headline",
+            "type": "text",
+            "label": "Success - Headline",
+            "default": "Congratulations \ud83c\udf89"
+        },
+        {
+            "id": "text_success_text",
+            "type": "text",
+            "label": "Success - Text",
+            "default": "Nice one! You\u2019ve unlocked free shipping!"
+        },
+        {
+            "type": "header",
+            "content": "free_shipping"
+        },
+        {
+            "type": "text",
+            "id": "free_shipping",
+            "label": "Free Shipping",
+            "default": "100"
         },
         {
             "type": "header",
