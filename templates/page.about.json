@@ -119,19 +119,19 @@
         "image_large_image": "shopify://shop_images/Immunity.webp"
       }
     },
-    "1759157529a66d31cd": {
+    "apps_WexwJy": {
       "type": "apps",
       "blocks": {
-        "okendo_reviews_widget_49GdWY": {
+        "okendo_reviews_widget_QBYMVa": {
           "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "lions-mane-gummies-2-500mg",
+            "product": "",
             "widget_type": "reviews_widget"
           }
         }
       },
       "block_order": [
-        "okendo_reviews_widget_49GdWY"
+        "okendo_reviews_widget_QBYMVa"
       ],
       "settings": {}
     },
@@ -173,7 +173,7 @@
     "image_with_text_righ_4bXVei",
     "image_with_text_left_C8jcDh",
     "image_with_text_righ_ybpFWr",
-    "1759157529a66d31cd",
+    "apps_WexwJy",
     "product_grid_home_CppNYj",
     "hero_v4_c3yTPz"
   ]
